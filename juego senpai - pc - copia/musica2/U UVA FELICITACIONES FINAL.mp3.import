@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c3o8fm6gg2gpy"
+path="res://.godot/imported/U UVA FELICITACIONES FINAL.mp3-be6dce16370a99b303f298fcaac915b6.mp3str"
+
+[deps]
+
+source_file="res://musica2/U UVA FELICITACIONES FINAL.mp3"
+dest_files=["res://.godot/imported/U UVA FELICITACIONES FINAL.mp3-be6dce16370a99b303f298fcaac915b6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

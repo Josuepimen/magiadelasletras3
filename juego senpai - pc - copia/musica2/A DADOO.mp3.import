@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bgtpdrv1nuakm"
+path="res://.godot/imported/A DADOO.mp3-7ac6b7f1509ca4c35d99fbdd1da1c1c3.mp3str"
+
+[deps]
+
+source_file="res://musica2/A DADOO.mp3"
+dest_files=["res://.godot/imported/A DADOO.mp3-7ac6b7f1509ca4c35d99fbdd1da1c1c3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

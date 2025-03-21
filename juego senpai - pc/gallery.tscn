@@ -1,0 +1,143 @@
+[gd_scene load_steps=17 format=3 uid="uid://nf7jmq1iid4b"]
+
+[ext_resource type="FontFile" uid="uid://cr0nvsgkyuubt" path="res://objetos/04B_30__.TTF" id="1_da7q0"]
+[ext_resource type="Texture2D" uid="uid://b1j1o3iif3dgq" path="res://fondos/123.png" id="2_vs6ta"]
+[ext_resource type="Script" path="res://gallery.gd" id="2_yxxhi"]
+[ext_resource type="Texture2D" uid="uid://deao04e3jb3rk" path="res://objetos/boton nivel1.png" id="3_trkx7"]
+[ext_resource type="Texture2D" uid="uid://c6jidm2lk3eoa" path="res://objetos/boton nivel11.png" id="4_4u82c"]
+[ext_resource type="Texture2D" uid="uid://bygesirw701j6" path="res://objetos/boton nivel 22.png" id="6_s7sj4"]
+[ext_resource type="Texture2D" uid="uid://baa3v8xfl8pap" path="res://objetos/boton nivel 2.png" id="7_5mpgn"]
+[ext_resource type="Texture2D" uid="uid://p2fqsss7n1ag" path="res://objetos/boton nivel3.png" id="8_oun6e"]
+[ext_resource type="Texture2D" uid="uid://d4bqawqjmhear" path="res://objetos/botonnivel33.png" id="9_ckfdn"]
+[ext_resource type="Texture2D" uid="uid://dgr53hpfven22" path="res://objetos/boton nivel 44.png" id="10_xhrl6"]
+[ext_resource type="Texture2D" uid="uid://5gtq1ig5k1q8" path="res://objetos/boton nivel 4.png" id="11_8vstk"]
+
+[sub_resource type="Theme" id="Theme_ksbwj"]
+Label/fonts/font = ExtResource("1_da7q0")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nrqn5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_trkx7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4u82c")
+}],
+"loop": true,
+"name": &"play1",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3ee8i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_s7sj4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5mpgn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t4g8w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_oun6e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ckfdn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ytack"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_xhrl6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_8vstk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="gallery" type="Control"]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_ksbwj")
+script = ExtResource("2_yxxhi")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_right = 1154.0
+offset_bottom = 644.0
+texture = ExtResource("2_vs6ta")
+
+[node name="nivel1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 189.0
+offset_top = 341.0
+offset_right = 317.0
+offset_bottom = 450.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="nivel1"]
+position = Vector2(65.5, 59)
+scale = Vector2(1.33, 1.18)
+sprite_frames = SubResource("SpriteFrames_nrqn5")
+animation = &"play1"
+
+[node name="nivel2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 380.0
+offset_top = 345.0
+offset_right = 508.0
+offset_bottom = 454.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="nivel2"]
+position = Vector2(63.5, 53)
+scale = Vector2(1.31, 1.08)
+sprite_frames = SubResource("SpriteFrames_3ee8i")
+frame_progress = 0.620236
+
+[node name="nivel3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 566.0
+offset_top = 344.0
+offset_right = 694.0
+offset_bottom = 453.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="nivel3"]
+position = Vector2(63.5, 55)
+scale = Vector2(1.31, 1.14)
+sprite_frames = SubResource("SpriteFrames_t4g8w")
+
+[node name="nivel4" type="Button" parent="."]
+layout_mode = 0
+offset_left = 770.0
+offset_top = 341.0
+offset_right = 898.0
+offset_bottom = 450.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="nivel4"]
+position = Vector2(62, 55)
+scale = Vector2(1.36, 1.12)
+sprite_frames = SubResource("SpriteFrames_ytack")
+
+[connection signal="pressed" from="nivel1" to="." method="_on_nivel_1_pressed"]
+[connection signal="pressed" from="nivel2" to="." method="_on_nivel_2_pressed"]
+[connection signal="pressed" from="nivel3" to="." method="_on_nivel_3_pressed"]
+[connection signal="pressed" from="nivel4" to="." method="_on_nivel_4_pressed"]

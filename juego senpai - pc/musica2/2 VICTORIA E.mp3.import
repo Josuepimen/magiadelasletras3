@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bmtclg72qq2cj"
+path="res://.godot/imported/2 VICTORIA E.mp3-a93cd8cf0d3775cb864a2c8609da6f94.mp3str"
+
+[deps]
+
+source_file="res://musica2/2 VICTORIA E.mp3"
+dest_files=["res://.godot/imported/2 VICTORIA E.mp3-a93cd8cf0d3775cb864a2c8609da6f94.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

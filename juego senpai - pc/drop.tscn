@@ -1,0 +1,64 @@
+[gd_scene load_steps=11 format=3 uid="uid://dtfyaf6jbs5c4"]
+
+[ext_resource type="Script" path="res://drop1.gd" id="1_ayx1u"]
+[ext_resource type="Texture2D" uid="uid://bbmfpc7ub30ex" path="res://objetos/prueba1.png" id="2_4nqj2"]
+[ext_resource type="Texture2D" uid="uid://drv0g6w6h8yrb" path="res://objetos/pruebaa1.png" id="3_lqr2y"]
+[ext_resource type="Texture2D" uid="uid://w5528vjevad" path="res://objetos/pruebaa2.png" id="4_2ecek"]
+[ext_resource type="Texture2D" uid="uid://dfoerd3mlxsdq" path="res://objetos/yey.png" id="5_4q5r6"]
+[ext_resource type="Texture2D" uid="uid://da3p6n7iwkkr7" path="res://objetos/yey2.png" id="6_l71dg"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_dpk7w"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_s7toc"]
+specular_color = Color(0.952941, 0.427451, 0.490196, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ci4lc"]
+size = Vector2(33, 26)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h5f0r"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4nqj2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_lqr2y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_2ecek")
+}],
+"loop": true,
+"name": &"normal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_4q5r6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_l71dg")
+}],
+"loop": true,
+"name": &"parado",
+"speed": 5.0
+}]
+
+[node name="drop_spot" type="Area2D" groups=["drop_spot_group"]]
+position = Vector2(506, 236)
+script = ExtResource("1_ayx1u")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+visible = false
+position = Vector2(-0.999981, -3.99999)
+scale = Vector2(-33.5239, 25.3478)
+mesh = SubResource("QuadMesh_dpk7w")
+texture = SubResource("CanvasTexture_s7toc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ci4lc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(2.44379e-05, -3.36171e-06)
+scale = Vector2(0.849999, 0.65)
+sprite_frames = SubResource("SpriteFrames_h5f0r")
+animation = &"parado"

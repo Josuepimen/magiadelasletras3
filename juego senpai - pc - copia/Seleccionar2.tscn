@@ -1,0 +1,704 @@
+[gd_scene load_steps=84 format=3 uid="uid://doccid6vjal51"]
+
+[ext_resource type="Script" path="res://Seleccionar232.gd" id="1_akx75"]
+[ext_resource type="Texture2D" uid="uid://d1qkqqix2lnpi" path="res://fondo expresar y crear definitivo, espero que si.png" id="2_e17ic"]
+[ext_resource type="Texture2D" uid="uid://nx6qiwb0ouh5" path="res://objetos/pizarraa.png" id="3_e5hew"]
+[ext_resource type="AudioStream" uid="uid://b760qquguqjoh" path="res://musica2/ME.mp3" id="5_kb5oi"]
+[ext_resource type="Script" path="res://Area2D.gd" id="7_u8dqm"]
+[ext_resource type="Texture2D" uid="uid://dedvj3yrq7ttu" path="res://objetos/me amarillo.png" id="7_y4c85"]
+[ext_resource type="Texture2D" uid="uid://bn734gdpth3re" path="res://objetos/Mesaanimacion.png" id="7_ypqsn"]
+[ext_resource type="Texture2D" uid="uid://d4ccl1d5jrnvw" path="res://objetos/Mesaniamacion2.png" id="8_ja4r6"]
+[ext_resource type="Texture2D" uid="uid://ib1qrb25gbh6" path="res://objetos/me.png" id="8_wf0jg"]
+[ext_resource type="Script" path="res://Area2D2.gd" id="10_2vanw"]
+[ext_resource type="Script" path="res://Area2D4.gd" id="10_04xww"]
+[ext_resource type="Script" path="res://Area2D3.gd" id="10_7ab88"]
+[ext_resource type="AudioStream" uid="uid://bqtmoik08p17b" path="res://musica2/sonido presionar2.mp3" id="10_amwrn"]
+[ext_resource type="AudioStream" uid="uid://4p4s2uyxvk07" path="res://musica2/MA.mp3" id="10_qr4so"]
+[ext_resource type="Texture2D" uid="uid://brh6g2ifiwu3i" path="res://objetos/mango animacion.png" id="11_ul3u5"]
+[ext_resource type="Texture2D" uid="uid://dto1yfl1qbv7h" path="res://objetos/ma animacionnn.png" id="12_55nas"]
+[ext_resource type="Texture2D" uid="uid://br32t0jqr0s0y" path="res://objetos/mangoanimacionn.png" id="12_if2sn"]
+[ext_resource type="Script" path="res://Area2D5.gd" id="12_rq8ev"]
+[ext_resource type="Texture2D" uid="uid://ccoqqulv7efvv" path="res://objetos/maaa.png" id="13_hddxq"]
+[ext_resource type="AudioStream" uid="uid://bhlmb1s1lwrtn" path="res://musica2/MI.mp3" id="15_p6btr"]
+[ext_resource type="Texture2D" uid="uid://boq4wllhv0wlb" path="res://objetos/miieel.png" id="16_1tpmv"]
+[ext_resource type="Texture2D" uid="uid://roaw34pg45xv" path="res://objetos/miieellll.png" id="17_hxovf"]
+[ext_resource type="Texture2D" uid="uid://cvex5jjiv2ox5" path="res://objetos/mi animadoo.png" id="18_bc748"]
+[ext_resource type="Texture2D" uid="uid://mtdetlu74t1s" path="res://objetos/mi animadeishon.png" id="19_0olwc"]
+[ext_resource type="Texture2D" uid="uid://qlkwq852targ" path="res://objetos/monoo.png" id="19_nu3at"]
+[ext_resource type="AudioStream" uid="uid://cyewieoj0ipb0" path="res://musica2/MO.mp3" id="20_flof6"]
+[ext_resource type="Texture2D" uid="uid://cerj331sglg3b" path="res://objetos/monooo.png" id="20_qyema"]
+[ext_resource type="Texture2D" uid="uid://cco3f5owadfe3" path="res://objetos/MEsa2.png" id="21_qk56e"]
+[ext_resource type="Texture2D" uid="uid://cuc8vmnicpske" path="res://objetos/mango.png" id="23_bmgfa"]
+[ext_resource type="Texture2D" uid="uid://cchitqvdsj2ne" path="res://objetos/mo animacion.png" id="24_xilgf"]
+[ext_resource type="Texture2D" uid="uid://c8p2huvtrce71" path="res://objetos/mieel.png" id="25_1q6u7"]
+[ext_resource type="Texture2D" uid="uid://bbnjh7a1acgyc" path="res://objetos/mo.png" id="25_aucff"]
+[ext_resource type="Texture2D" uid="uid://bcmau56aeohcc" path="res://objetos/monito.png" id="26_xtc2v"]
+[ext_resource type="Texture2D" uid="uid://b0bpyh5771ery" path="res://objetos/mundoo.png" id="26_ymep8"]
+[ext_resource type="Texture2D" uid="uid://dd5vscrxl6vhs" path="res://objetos/munduwu.png" id="27_pgnxl"]
+[ext_resource type="AudioStream" uid="uid://cv7c24m26eagh" path="res://musica2/Audio MU.mp3" id="30_7ln0y"]
+[ext_resource type="Texture2D" uid="uid://tgdqqqd8nkic" path="res://objetos/mu animadou.png" id="30_b6q54"]
+[ext_resource type="Texture2D" uid="uid://bgd7hn2fqpppc" path="res://objetos/mu.png" id="31_pm7nl"]
+[ext_resource type="Texture2D" uid="uid://cbuvomll6dlh3" path="res://objetos/Mochilaa.png" id="36_40xva"]
+[ext_resource type="Texture2D" uid="uid://c3gem8j3jtogo" path="res://objetos/mochilaaaayanomecabienestamonda.png" id="36_oek58"]
+[ext_resource type="Texture2D" uid="uid://cnvy12i07sgy7" path="res://objetos/correctoo.png" id="38_xvklb"]
+[ext_resource type="AudioStream" uid="uid://2pbp5cpxytfo" path="res://musica2/BIENVENIDA EXPRESAR Y CREAR.mp3" id="39_rkkdf"]
+[ext_resource type="Texture2D" uid="uid://cjbbedrfvbxrl" path="res://objetos/correctooo.png" id="39_sb4gw"]
+[ext_resource type="Texture2D" uid="uid://bcgr85jinxurx" path="res://objetos/correctoooo.png" id="40_ivv3p"]
+[ext_resource type="Texture2D" uid="uid://b4ubg5eth031" path="res://objetos/mundo.png" id="41_kocl3"]
+[ext_resource type="Texture2D" uid="uid://dub22xgjp1qof" path="res://objetos/correctooooo.png" id="41_u3h75"]
+[ext_resource type="Texture2D" uid="uid://bkpsgyxwqa2v0" path="res://objetos/correctoooooo.png" id="42_y62ao"]
+[ext_resource type="Texture2D" uid="uid://xgia3a20vnft" path="res://objetos/clickmanitoowo.png" id="48_oyjwu"]
+[ext_resource type="Texture2D" uid="uid://bkgux572mvwgd" path="res://objetos/mano animada uwu.png" id="49_lmimk"]
+[ext_resource type="Texture2D" uid="uid://cw284m53md8dw" path="res://Carpeta con las animaciones/niñañaña.png" id="50_mpifd"]
+[ext_resource type="Texture2D" uid="uid://l34ohknpkt1m" path="res://Carpeta con las animaciones/niñañañaña.png" id="51_th7o5"]
+[ext_resource type="Texture2D" uid="uid://bqahs20ulq0on" path="res://objetos/boton retroceder v3.png" id="52_6pivs"]
+[ext_resource type="Texture2D" uid="uid://bay44b82yi2ie" path="res://objetos/boton retroceder v2.png" id="53_p0m8w"]
+[ext_resource type="Texture2D" uid="uid://bpd7jgwnakjyp" path="res://Carpeta con las animaciones/maestraa.png" id="54_jes0o"]
+[ext_resource type="Texture2D" uid="uid://cdnixe1sbspr3" path="res://Carpeta con las animaciones/maestrita.png" id="55_xfwbt"]
+[ext_resource type="AudioStream" uid="uid://c86tbt0lms3j6" path="res://musica/PRESIONA EL BOTÓN .mp3" id="56_mv67l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a7vsy"]
+size = Vector2(66, 33)
+
+[sub_resource type="Curve2D" id="Curve2D_0s10p"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 63, 133, 0, 0, 0, 0, 109, 267)
+}
+point_count = 2
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0cem8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_wf0jg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_y4c85")
+}],
+"loop": true,
+"name": &"Quieto",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vyvx1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_ypqsn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ja4r6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pif3o"]
+size = Vector2(69, 35)
+
+[sub_resource type="Curve2D" id="Curve2D_nh7no"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -11, 62, 0, 0, 0, 0, -16.2106, 176)
+}
+point_count = 2
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g5rv1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_55nas")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_hddxq")
+}],
+"loop": true,
+"name": &"quieto",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2s41n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_if2sn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ul3u5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3qqdj"]
+size = Vector2(67, 34)
+
+[sub_resource type="Curve2D" id="Curve2D_uld32"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 51, 147, 0, 0, 0, 0, 102, 267)
+}
+point_count = 2
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g71uo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_bc748")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_0olwc")
+}],
+"loop": true,
+"name": &"quieto",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ly6he"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_1tpmv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_hxovf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0ah1j"]
+size = Vector2(68, 35.5)
+
+[sub_resource type="Curve2D" id="Curve2D_52pge"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 20, 131, 0, 0, 0, 0, -166, 250)
+}
+point_count = 2
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eoxgj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_xilgf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_aucff")
+}],
+"loop": true,
+"name": &"quieto",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kb38b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_qyema")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_nu3at")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w7tme"]
+size = Vector2(67, 35)
+
+[sub_resource type="Curve2D" id="Curve2D_5kn5w"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 11, 140, 0, 0, 0, 0, -9, 265)
+}
+point_count = 2
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ek0gf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("30_b6q54")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_pm7nl")
+}],
+"loop": true,
+"name": &"quieto",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ed1oo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_ymep8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_pgnxl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_162s3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("36_40xva")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_oek58")
+}],
+"loop": true,
+"name": &"correte",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3101m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("38_xvklb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_sb4gw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_ivv3p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_u3h75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_y62ao")
+}],
+"loop": true,
+"name": &"celebration_sprite",
+"speed": 9.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h3nuc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("48_oyjwu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_lmimk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_17krf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("50_mpifd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_th7o5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ekp67"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("48_oyjwu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_lmimk")
+}],
+"loop": true,
+"name": &"click",
+"speed": 6.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_b5p5v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("52_6pivs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_p0m8w")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_36ck0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("54_jes0o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_xfwbt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="Node2D" type="Node2D"]
+texture_filter = 1
+scale = Vector2(1.00976, 1.01603)
+script = ExtResource("1_akx75")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(570.5, 320.78)
+scale = Vector2(1.165, 1.10927)
+texture = ExtResource("2_e17ic")
+
+[node name="Pizarra" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(655.5, 467)
+scale = Vector2(4.25, 1.92954)
+texture = ExtResource("3_e5hew")
+
+[node name="Area2D" type="Area2D" parent="."]
+texture_filter = 1
+position = Vector2(504.5, 216)
+script = ExtResource("7_u8dqm")
+
+[node name="Audiome" type="AudioStreamPlayer2D" parent="Area2D"]
+texture_filter = 1
+position = Vector2(59.5, 97)
+stream = ExtResource("5_kb5oi")
+volume_db = 15.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+texture_filter = 1
+position = Vector2(57.5, 97)
+shape = SubResource("RectangleShape2D_a7vsy")
+
+[node name="Path2D" type="Path2D" parent="Area2D"]
+texture_filter = 1
+position = Vector2(-3.5, -43)
+curve = SubResource("Curve2D_0s10p")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Area2D/Path2D"]
+texture_filter = 1
+position = Vector2(63, 133)
+rotation = -0.00254858
+rotates = false
+loop = false
+
+[node name="ME" type="AnimatedSprite2D" parent="Area2D/Path2D/PathFollow2D"]
+texture_filter = 1
+position = Vector2(-0.022934, 8.99996)
+scale = Vector2(0.792721, 0.580776)
+sprite_frames = SubResource("SpriteFrames_0cem8")
+animation = &"Quieto"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
+texture_filter = 1
+position = Vector2(106.5, 241.5)
+scale = Vector2(0.599999, 0.47)
+sprite_frames = SubResource("SpriteFrames_vyvx1")
+
+[node name="Sonido cuando se presiona" type="AudioStreamPlayer" parent="Area2D"]
+stream = ExtResource("10_amwrn")
+
+[node name="Area2D2" type="Area2D" parent="."]
+texture_filter = 1
+position = Vector2(477.5, 299)
+script = ExtResource("10_2vanw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+texture_filter = 1
+position = Vector2(5, 15.5)
+shape = SubResource("RectangleShape2D_pif3o")
+
+[node name="Audioma" type="AudioStreamPlayer2D" parent="Area2D2"]
+texture_filter = 1
+position = Vector2(150.5, 43)
+stream = ExtResource("10_qr4so")
+volume_db = 15.0
+
+[node name="Path2D" type="Path2D" parent="Area2D2"]
+texture_filter = 1
+position = Vector2(37.5, -42)
+scale = Vector2(2.71428, 1)
+curve = SubResource("Curve2D_nh7no")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Area2D2/Path2D"]
+texture_filter = 1
+position = Vector2(-11, 62)
+rotation = 1.67046
+rotates = false
+loop = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D2/Path2D/PathFollow2D"]
+texture_filter = 1
+position = Vector2(-6.88672, 1.48207)
+rotation = -1.67023
+scale = Vector2(0.246867, 0.482585)
+sprite_frames = SubResource("SpriteFrames_g5rv1")
+animation = &"quieto"
+frame_progress = 0.00647737
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D2"]
+texture_filter = 1
+position = Vector2(-7.50001, 157)
+scale = Vector2(0.495193, 0.432692)
+sprite_frames = SubResource("SpriteFrames_2s41n")
+
+[node name="Sonido cuando se presiona" type="AudioStreamPlayer" parent="Area2D2"]
+stream = ExtResource("10_amwrn")
+
+[node name="Area2D3" type="Area2D" parent="."]
+texture_filter = 1
+position = Vector2(601.5, 216)
+script = ExtResource("10_7ab88")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
+texture_filter = 1
+position = Vector2(41.5, 97)
+shape = SubResource("RectangleShape2D_3qqdj")
+
+[node name="audiomi" type="AudioStreamPlayer2D" parent="Area2D3"]
+texture_filter = 1
+position = Vector2(25.5, 127)
+stream = ExtResource("15_p6btr")
+volume_db = 15.0
+
+[node name="Path2D" type="Path2D" parent="Area2D3"]
+texture_filter = 1
+position = Vector2(-11.5, -48)
+curve = SubResource("Curve2D_uld32")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Area2D3/Path2D"]
+texture_filter = 1
+position = Vector2(51, 147)
+rotates = false
+loop = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D3/Path2D/PathFollow2D"]
+texture_filter = 1
+position = Vector2(2.00002, -1.37091e-05)
+scale = Vector2(0.795, 0.575)
+sprite_frames = SubResource("SpriteFrames_g71uo")
+animation = &"quieto"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D3"]
+texture_filter = 1
+position = Vector2(90.5, 241)
+scale = Vector2(0.532, 0.47)
+sprite_frames = SubResource("SpriteFrames_ly6he")
+
+[node name="Sonido cuando se presiona" type="AudioStreamPlayer" parent="Area2D3"]
+stream = ExtResource("10_amwrn")
+
+[node name="Area2D4" type="Area2D" parent="."]
+texture_filter = 1
+position = Vector2(698.5, 220)
+script = ExtResource("10_04xww")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4"]
+texture_filter = 1
+position = Vector2(20.5, 93.25)
+shape = SubResource("RectangleShape2D_0ah1j")
+
+[node name="aUDIOmo" type="AudioStreamPlayer2D" parent="Area2D4"]
+texture_filter = 1
+position = Vector2(-70.5, 123)
+stream = ExtResource("20_flof6")
+volume_db = 15.0
+attenuation = 0.0122591
+
+[node name="Path2D" type="Path2D" parent="Area2D4"]
+texture_filter = 1
+position = Vector2(10.5, -38)
+curve = SubResource("Curve2D_52pge")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Area2D4/Path2D"]
+texture_filter = 1
+position = Vector2(20, 131)
+rotation = 2.45798
+rotates = false
+loop = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D4/Path2D/PathFollow2D"]
+texture_filter = 1
+position = Vector2(7.60926, 4.90908)
+rotation = -2.45375
+scale = Vector2(0.792335, 0.570635)
+sprite_frames = SubResource("SpriteFrames_eoxgj")
+animation = &"quieto"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D4"]
+texture_filter = 1
+position = Vector2(-164.25, 236.5)
+scale = Vector2(0.514423, 0.432692)
+sprite_frames = SubResource("SpriteFrames_kb38b")
+frame_progress = 0.548467
+
+[node name="Sonido cuando se presiona" type="AudioStreamPlayer" parent="Area2D4"]
+stream = ExtResource("10_amwrn")
+
+[node name="Area2D5" type="Area2D" parent="."]
+texture_filter = 1
+position = Vector2(779, 211)
+script = ExtResource("12_rq8ev")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D5"]
+texture_filter = 1
+position = Vector2(16.5, 102.5)
+shape = SubResource("RectangleShape2D_w7tme")
+
+[node name="Audiomu" type="AudioStreamPlayer2D" parent="Area2D5"]
+texture_filter = 1
+position = Vector2(-152, 132)
+stream = ExtResource("30_7ln0y")
+volume_db = 15.0
+
+[node name="Path2D" type="Path2D" parent="Area2D5"]
+texture_filter = 1
+position = Vector2(5, -38)
+curve = SubResource("Curve2D_5kn5w")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Area2D5/Path2D"]
+texture_filter = 1
+position = Vector2(11, 140)
+rotates = false
+loop = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D5/Path2D/PathFollow2D"]
+texture_filter = 1
+position = Vector2(2, 1.99999)
+scale = Vector2(0.795, 0.575)
+sprite_frames = SubResource("SpriteFrames_ek0gf")
+animation = &"quieto"
+frame_progress = 0.348499
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D5"]
+texture_filter = 1
+position = Vector2(-1.00001, 256)
+scale = Vector2(0.450001, 0.466667)
+sprite_frames = SubResource("SpriteFrames_ed1oo")
+
+[node name="Sonido cuando se presiona" type="AudioStreamPlayer" parent="Area2D5"]
+stream = ExtResource("10_amwrn")
+
+[node name="Mango" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(453, 509)
+scale = Vector2(0.319737, 0.318421)
+texture = ExtResource("23_bmgfa")
+
+[node name="Mesa" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(607, 512)
+scale = Vector2(0.0830996, 0.0864797)
+texture = ExtResource("21_qk56e")
+
+[node name="Mieel" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(690, 505)
+scale = Vector2(0.892157, 0.885135)
+texture = ExtResource("25_1q6u7")
+
+[node name="Monito" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(529, 515)
+scale = Vector2(0.267307, 0.278571)
+texture = ExtResource("26_xtc2v")
+
+[node name="Bienvenido" type="AudioStreamPlayer2D" parent="."]
+texture_filter = 1
+position = Vector2(627, 342)
+stream = ExtResource("39_rkkdf")
+volume_db = 15.0
+attenuation = 0.00837323
+
+[node name="Button" type="Button" parent="."]
+texture_filter = 1
+offset_left = 17.0
+offset_top = 500.0
+offset_right = 227.0
+offset_bottom = 637.0
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="AnimatedSprite2D" parent="Button"]
+texture_filter = 1
+position = Vector2(125.938, 72.5625)
+scale = Vector2(0.53225, 0.33025)
+sprite_frames = SubResource("SpriteFrames_162s3")
+animation = &"correte"
+
+[node name="CelebrationSprite" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(607, 376)
+scale = Vector2(1.68, 1.43)
+sprite_frames = SubResource("SpriteFrames_3101m")
+animation = &"celebration_sprite"
+frame_progress = 0.645201
+
+[node name="Mundo" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(775.547, 511.25)
+scale = Vector2(0.377361, 0.291111)
+texture = ExtResource("41_kocl3")
+
+[node name="Mano tutorial 1" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(196, 587)
+sprite_frames = SubResource("SpriteFrames_h3nuc")
+
+[node name="Niña" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(879, 536)
+scale = Vector2(1.54, 1.376)
+sprite_frames = SubResource("SpriteFrames_17krf")
+
+[node name="Mano" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(490, 334)
+sprite_frames = SubResource("SpriteFrames_ekp67")
+animation = &"click"
+frame_progress = 0.832635
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+
+[node name="Button2" type="Button" parent="."]
+texture_filter = 1
+offset_left = 7.0
+offset_top = 4.0
+offset_right = 133.0
+offset_bottom = 100.0
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Button2"]
+texture_filter = 1
+position = Vector2(48, 32.5)
+scale = Vector2(1.46667, 1.41667)
+sprite_frames = SubResource("SpriteFrames_b5p5v")
+flip_h = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(371, 506)
+scale = Vector2(0.8, 0.7975)
+sprite_frames = SubResource("SpriteFrames_36ck0")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("56_mv67l")
+volume_db = 7.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

@@ -1,0 +1,77 @@
+[gd_scene load_steps=5 format=3 uid="uid://dttjvwq5ljobu"]
+
+[ext_resource type="Texture2D" path="res://objetos/Letra O definitiva.png" id="1_04lae"]
+[ext_resource type="AudioStream" uid="uid://bqtmoik08p17b" path="res://musica2/sonido presionar2.mp3" id="2_enihj"]
+
+[sub_resource type="GDScript" id="GDScript_qrtp5"]
+script/source = "extends Sprite2D
+
+var is_dragging = false # Manejo de estado
+var mouse_offset # Offset del ratón al centro en el clic
+var delay = 0.2
+var drop_spots
+var initial_position # Posición inicial del sprite
+
+func _ready():
+	drop_spots = get_tree().get_nodes_in_group(\"drop_spot_group\")
+	initial_position = position
+
+func _physics_process(delta):
+	if is_dragging:
+		var tween = get_tree().create_tween()
+		tween.tween_property(self, \"position\", get_global_mouse_position() - mouse_offset, delay * delta)
+
+func _input(event):
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
+		if event.pressed:
+			if get_rect().has_point(to_local(event.position)):
+				is_dragging = true
+				mouse_offset = get_global_mouse_position() - global_position
+		else:
+			is_dragging = false
+			if not is_dropped():
+				position = initial_position
+
+func is_dropped() -> bool:
+	for drop_spot in drop_spots:
+		if drop_spot.has_overlapping_areas() and drop_spot.get_overlapping_areas().has(self.get_node(\"Area2D\")):
+			# El objeto draggable ha entrado en el área de drop
+			$AudioStreamPlayer2D.play()
+
+			drop_spot.call_deferred(\"cambiar_animacion\")
+			cambiar_escena() # Llamar a cambiar_escena() aquí
+			# Centrar la posición del objeto draggable en el área de drop
+			position = drop_spot.global_position
+			return true
+	return false
+
+
+func cambiar_escena():
+	await get_tree().create_timer(1).timeout
+	get_tree().change_scene_to_file(\"res://win4.tscn\")
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n8neg"]
+size = Vector2(8.36502, 10.9775)
+
+[node name="Sprite2D" type="Sprite2D"]
+texture_filter = 1
+position = Vector2(568.7, 347.75)
+scale = Vector2(1.315, 1.6625)
+texture = ExtResource("1_04lae")
+script = SubResource("GDScript_qrtp5")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(-1.76994, -2.90909)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1.61783, 2.98428)
+shape = SubResource("RectangleShape2D_n8neg")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_enihj")
+volume_db = 6.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

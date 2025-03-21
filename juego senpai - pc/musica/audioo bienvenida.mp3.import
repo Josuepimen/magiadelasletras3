@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://2oo5mgvj54hr"
+path="res://.godot/imported/audioo bienvenida.mp3-49419b8eac49309f1fd7ca2a7517c10d.mp3str"
+
+[deps]
+
+source_file="res://musica/audioo bienvenida.mp3"
+dest_files=["res://.godot/imported/audioo bienvenida.mp3-49419b8eac49309f1fd7ca2a7517c10d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

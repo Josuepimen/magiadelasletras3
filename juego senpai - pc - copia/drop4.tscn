@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwwktmvd36eup"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_dpk7w"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_s7toc"]
+specular_color = Color(0.952941, 0.427451, 0.490196, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ci4lc"]
+size = Vector2(33, 26)
+
+[node name="drop_spot" type="Area2D" groups=["drop_spot_group"]]
+position = Vector2(525, 212)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+position = Vector2(20.6841, -39.9002)
+scale = Vector2(-33.5239, 25.3478)
+mesh = SubResource("QuadMesh_dpk7w")
+texture = SubResource("CanvasTexture_s7toc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(20.5, -40)
+shape = SubResource("RectangleShape2D_ci4lc")

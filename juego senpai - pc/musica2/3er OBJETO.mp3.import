@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://djl0x0x5tqsxe"
+path="res://.godot/imported/3er OBJETO.mp3-2554fcb2f3528bff3f9feadf87ac1914.mp3str"
+
+[deps]
+
+source_file="res://musica2/3er OBJETO.mp3"
+dest_files=["res://.godot/imported/3er OBJETO.mp3-2554fcb2f3528bff3f9feadf87ac1914.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

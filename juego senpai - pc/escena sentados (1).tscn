@@ -1,0 +1,118 @@
+[gd_scene load_steps=13 format=3 uid="uid://b41bh6x3ot4xq"]
+
+[ext_resource type="Texture2D" uid="uid://balp33qnuscfo" path="res://objetos/descarga (1).jpg" id="1_onanc"]
+[ext_resource type="Texture2D" uid="uid://bxdowmxydqywv" path="res://Carpeta con las animaciones/x1d1.png" id="2_51sx8"]
+[ext_resource type="Script" path="res://sentarse.gd" id="2_tkvr3"]
+[ext_resource type="Texture2D" uid="uid://nic4x1bikec2" path="res://Carpeta con las animaciones/x2.png" id="3_hd07m"]
+[ext_resource type="Texture2D" uid="uid://dsfdlptfj7rpl" path="res://Carpeta con las animaciones/x3.png" id="4_0pv73"]
+[ext_resource type="Texture2D" uid="uid://8qexgyxuxo42" path="res://Carpeta con las animaciones/sentado 1.png" id="5_gxyva"]
+[ext_resource type="Texture2D" uid="uid://dku7u2gmrgotd" path="res://objetos/silla.png" id="7_aj40k"]
+[ext_resource type="Script" path="res://click2.gd" id="8_vvhph"]
+[ext_resource type="Texture2D" uid="uid://cc7yo5efy8d5f" path="res://objetos/pixil-frame-0 (8) (1).png" id="9_a5i0y"]
+
+[sub_resource type="Curve2D" id="Curve2D_nhi57"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 1157, 374, 0, 0, 0, 0, 209.961, 383, 0, 0, 0, 0, 203.936, 386, 0, 0, 0, 0, 211.97, 385)
+}
+point_count = 4
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_biwdg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_51sx8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_hd07m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0pv73")
+}],
+"loop": true,
+"name": &"caminando",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_gxyva")
+}],
+"loop": true,
+"name": &"estatico",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wp7dg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_a5i0y")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="main2" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(575.5, 322)
+scale = Vector2(4.17818, 3.48634)
+texture = ExtResource("1_onanc")
+
+[node name="uwu" type="Node2D" parent="."]
+script = ExtResource("2_tkvr3")
+
+[node name="Path2D" type="Path2D" parent="uwu"]
+position = Vector2(4.93394, 2)
+scale = Vector2(0.995736, 1)
+curve = SubResource("Curve2D_nhi57")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="uwu/Path2D"]
+position = Vector2(1157, 374)
+rotation = 2.65105
+rotates = false
+loop = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="uwu/Path2D/PathFollow2D"]
+position = Vector2(-35.303, 15.1558)
+rotation = -2.63037
+scale = Vector2(0.615327, 0.574243)
+sprite_frames = SubResource("SpriteFrames_biwdg")
+animation = &"caminando"
+
+[node name="Timer" type="Timer" parent="uwu"]
+wait_time = 5.0
+
+[node name="Silla" type="Sprite2D" parent="."]
+position = Vector2(220, 363)
+scale = Vector2(0.101375, 0.125833)
+texture = ExtResource("7_aj40k")
+
+[node name="Silla2" type="Sprite2D" parent="."]
+position = Vector2(217, 440)
+scale = Vector2(0.101375, 0.125833)
+texture = ExtResource("7_aj40k")
+
+[node name="Silla4" type="Sprite2D" parent="."]
+position = Vector2(215, 526)
+scale = Vector2(0.101375, 0.125833)
+texture = ExtResource("7_aj40k")
+
+[node name="Silla3" type="Sprite2D" parent="."]
+position = Vector2(219, 276)
+scale = Vector2(0.101375, 0.125833)
+texture = ExtResource("7_aj40k")
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("8_vvhph")
+
+[node name="aparecer3" type="Timer" parent="Node2D"]
+wait_time = 10.0
+one_shot = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Node2D"]
+position = Vector2(1066, 562)
+scale = Vector2(0.314, 0.308)
+sprite_frames = SubResource("SpriteFrames_wp7dg")
+
+[connection signal="timeout" from="Node2D/aparecer3" to="Node2D" method="_on_aparecer_3_timeout"]

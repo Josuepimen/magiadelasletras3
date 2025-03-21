@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://71vw6nqnaw13"
+path="res://.godot/imported/2.0 BIENVENIDA ARMAR Y CONSTRUIR  (1).mp3-252ea6400072fbd75aab7545b62ddb68.mp3str"
+
+[deps]
+
+source_file="res://musica2/2.0 BIENVENIDA ARMAR Y CONSTRUIR  (1).mp3"
+dest_files=["res://.godot/imported/2.0 BIENVENIDA ARMAR Y CONSTRUIR  (1).mp3-252ea6400072fbd75aab7545b62ddb68.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

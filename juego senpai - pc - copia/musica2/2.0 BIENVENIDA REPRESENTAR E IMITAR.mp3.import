@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b8ebhvewrxjob"
+path="res://.godot/imported/2.0 BIENVENIDA REPRESENTAR E IMITAR.mp3-5c9820132a0242c7d7db667f2565202b.mp3str"
+
+[deps]
+
+source_file="res://musica2/2.0 BIENVENIDA REPRESENTAR E IMITAR.mp3"
+dest_files=["res://.godot/imported/2.0 BIENVENIDA REPRESENTAR E IMITAR.mp3-5c9820132a0242c7d7db667f2565202b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

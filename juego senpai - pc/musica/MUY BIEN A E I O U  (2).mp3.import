@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cdlvomxoncn4m"
+path="res://.godot/imported/MUY BIEN A E I O U  (2).mp3-e5f44b65ce909c0c36d1cadc4365a1c4.mp3str"
+
+[deps]
+
+source_file="res://musica/MUY BIEN A E I O U  (2).mp3"
+dest_files=["res://.godot/imported/MUY BIEN A E I O U  (2).mp3-e5f44b65ce909c0c36d1cadc4365a1c4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

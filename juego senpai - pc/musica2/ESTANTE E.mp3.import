@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d3i7yj6qo3bo8"
+path="res://.godot/imported/ESTANTE E.mp3-648bc1f1164c17da58afa26a8ff3bf1d.mp3str"
+
+[deps]
+
+source_file="res://musica2/ESTANTE E.mp3"
+dest_files=["res://.godot/imported/ESTANTE E.mp3-648bc1f1164c17da58afa26a8ff3bf1d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,547 @@
+[gd_scene load_steps=46 format=3 uid="uid://dvr1d7duqephr"]
+
+[ext_resource type="FontFile" path="res://objetos/04B_30__.TTF" id="1_1pt0n"]
+[ext_resource type="Texture2D" uid="uid://dseastj4nxeoh" path="res://fondos/fondovictoria.jpg" id="1_u2e24"]
+[ext_resource type="Script" path="res://victory.gd" id="2_ewwui"]
+[ext_resource type="Texture2D" path="res://objetos/marco.png" id="2_iwch1"]
+[ext_resource type="Texture2D" uid="uid://txfdieoue6c" path="res://Carpeta con las animaciones/globoazul.png" id="5_51csy"]
+[ext_resource type="Texture2D" path="res://objetos/222.png" id="5_fqmjx"]
+[ext_resource type="Texture2D" uid="uid://dhp5wwsqsh153" path="res://Carpeta con las animaciones/globorojo.png" id="6_d0dir"]
+[ext_resource type="Texture2D" uid="uid://mghe4bixxmw8" path="res://Carpeta con las animaciones/globo blanco.png" id="7_8h5wg"]
+[ext_resource type="Texture2D" uid="uid://4bnt17wiqwph" path="res://objetos/trofeo.png" id="7_u2ep2"]
+[ext_resource type="AudioStream" uid="uid://d3j4xu6e28dyh" path="res://musica2/1.mp3" id="10_5oie7"]
+[ext_resource type="Texture2D" uid="uid://boxm2nke5e0gx" path="res://objetos/estrella1.png" id="10_buamm"]
+[ext_resource type="Texture2D" uid="uid://drd6xx6m32e0f" path="res://objetos/estrella2.png" id="11_r0tpe"]
+[ext_resource type="Texture2D" uid="uid://c3v7kyh4ocsm0" path="res://Carpeta con las animaciones/globo4.png" id="11_ww2so"]
+[ext_resource type="Texture2D" uid="uid://bl1o1rf28j1bu" path="res://objetos/estrella3.png" id="12_28b5r"]
+[ext_resource type="FontFile" uid="uid://c73rv4ejrg5bm" path="res://objetos/Cute Dino.ttf" id="13_k3li1"]
+[ext_resource type="AudioStream" uid="uid://dwv226gv3pdak" path="res://musica/FEtLICITACIONES A E I O U  U(1).mp3" id="16_jxcdg"]
+[ext_resource type="Texture2D" uid="uid://cbuvomll6dlh3" path="res://objetos/Mochilaa.png" id="18_duwtf"]
+[ext_resource type="AudioStream" uid="uid://di72iyivey1cq" path="res://musica2/Viento.mp3" id="18_y1jxn"]
+[ext_resource type="Texture2D" uid="uid://c3gem8j3jtogo" path="res://objetos/mochilaaaayanomecabienestamonda.png" id="19_vw2bg"]
+
+[sub_resource type="Theme" id="Theme_3ahi4"]
+Label/fonts/font = ExtResource("1_1pt0n")
+
+[sub_resource type="CurveXYZTexture" id="CurveXYZTexture_xblfl"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_1c4sl"]
+emission_shape_offset = Vector3(1, 5, 8)
+emission_shape_scale = Vector3(4, 8, 7)
+emission_shape = 3
+emission_box_extents = Vector3(120, 0, 80)
+direction = Vector3(6, 0, 0)
+spread = 122.4
+directional_velocity_min = 87.4
+directional_velocity_max = 188.2
+directional_velocity_curve = SubResource("CurveXYZTexture_xblfl")
+gravity = Vector3(0, 98, 0)
+turbulence_enabled = true
+turbulence_noise_strength = 1.75
+turbulence_noise_scale = 7.208
+turbulence_noise_speed_random = 0.43
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tqkpm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_buamm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_r0tpe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_28b5r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_buamm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_uf6gu"]
+font_size = 35
+font_color = Color(0, 0, 0, 1)
+outline_size = 11
+
+[sub_resource type="LabelSettings" id="LabelSettings_fk32w"]
+font = ExtResource("13_k3li1")
+font_size = 40
+font_color = Color(0, 0, 0, 1)
+outline_size = 9
+
+[sub_resource type="LabelSettings" id="LabelSettings_ujyf3"]
+font = ExtResource("13_k3li1")
+font_size = 40
+font_color = Color(0, 0, 0, 1)
+outline_size = 9
+
+[sub_resource type="LabelSettings" id="LabelSettings_tlylv"]
+font = ExtResource("13_k3li1")
+font_size = 40
+font_color = Color(0, 0, 0, 1)
+outline_size = 9
+
+[sub_resource type="LabelSettings" id="LabelSettings_v5utr"]
+font = ExtResource("13_k3li1")
+font_size = 40
+font_color = Color(0, 0, 0, 1)
+outline_size = 9
+
+[sub_resource type="LabelSettings" id="LabelSettings_3vwjb"]
+font = ExtResource("13_k3li1")
+font_size = 40
+font_color = Color(0, 0, 0, 1)
+outline_size = 9
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_brr4u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_duwtf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_vw2bg")
+}],
+"loop": true,
+"name": &"animacion",
+"speed": 2.0
+}]
+
+[sub_resource type="Animation" id="Animation_bdrld"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect2/Label6:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_brfyi"]
+resource_name = "Scale"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect2/Label6:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.6, 1.6)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_r1ctc"]
+_data = {
+"RESET": SubResource("Animation_bdrld"),
+"Scale": SubResource("Animation_brfyi")
+}
+
+[sub_resource type="Animation" id="Animation_4an7n"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect2/Label3:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_op80c"]
+resource_name = "new_animation"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect2/Label3:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.6, 1.6)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_plvhn"]
+_data = {
+"RESET": SubResource("Animation_4an7n"),
+"new_animation": SubResource("Animation_op80c")
+}
+
+[sub_resource type="Animation" id="Animation_qo7ka"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect2/Label5:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_oxcje"]
+resource_name = "new_animation"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect2/Label5:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.6, 1.6)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ihgln"]
+_data = {
+"RESET": SubResource("Animation_qo7ka"),
+"new_animation": SubResource("Animation_oxcje")
+}
+
+[sub_resource type="Animation" id="Animation_kfubw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect2/Label4:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ktm62"]
+resource_name = "new_animation"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect2/Label4:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.6, 1.6)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_arsae"]
+_data = {
+"RESET": SubResource("Animation_kfubw"),
+"new_animation": SubResource("Animation_ktm62")
+}
+
+[sub_resource type="Animation" id="Animation_dc5ii"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect2/Label2:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_bnrea"]
+resource_name = "new_animation"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect2/Label2:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.6, 1.6)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hh1fo"]
+_data = {
+"RESET": SubResource("Animation_dc5ii"),
+"new_animation": SubResource("Animation_bnrea")
+}
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+theme = SubResource("Theme_3ahi4")
+script = ExtResource("2_ewwui")
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 1.0
+texture = ExtResource("1_u2e24")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+position = Vector2(-61, -55)
+amount = 10
+process_material = SubResource("ParticleProcessMaterial_1c4sl")
+texture = ExtResource("11_ww2so")
+lifetime = 10.0
+trail_lifetime = 0.01
+
+[node name="GPUParticles2D2" type="GPUParticles2D" parent="."]
+position = Vector2(-98, 212)
+amount = 10
+process_material = SubResource("ParticleProcessMaterial_1c4sl")
+texture = ExtResource("5_51csy")
+lifetime = 10.0
+trail_lifetime = 0.01
+
+[node name="GPUParticles2D3" type="GPUParticles2D" parent="."]
+position = Vector2(-91, 234)
+amount = 10
+process_material = SubResource("ParticleProcessMaterial_1c4sl")
+texture = ExtResource("6_d0dir")
+lifetime = 10.0
+trail_lifetime = 0.01
+
+[node name="GPUParticles2D4" type="GPUParticles2D" parent="."]
+position = Vector2(-71, 191)
+amount = 7
+process_material = SubResource("ParticleProcessMaterial_1c4sl")
+texture = ExtResource("7_8h5wg")
+lifetime = 10.0
+trail_lifetime = 0.01
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 266.0
+offset_top = 111.0
+offset_right = 852.0
+offset_bottom = 477.999
+scale = Vector2(1.05393, 1.10758)
+texture = ExtResource("2_iwch1")
+
+[node name="ColorRect" type="ColorRect" parent="TextureRect2"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 25.0
+offset_top = 25.0
+offset_right = 560.0
+offset_bottom = 339.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect6" type="TextureRect" parent="TextureRect2"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 104.0
+offset_right = 302.0
+offset_bottom = 224.0
+texture = ExtResource("5_fqmjx")
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="TextureRect2"]
+position = Vector2(55.5065, 313.296)
+scale = Vector2(0.825482, 0.848697)
+sprite_frames = SubResource("SpriteFrames_tqkpm")
+frame_progress = 0.758315
+
+[node name="AnimatedSprite2D6" type="AnimatedSprite2D" parent="TextureRect2"]
+position = Vector2(55.5065, 313.296)
+scale = Vector2(0.825482, 0.848697)
+sprite_frames = SubResource("SpriteFrames_tqkpm")
+frame_progress = 0.0403208
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="TextureRect2"]
+position = Vector2(110.539, 313.296)
+scale = Vector2(0.825482, 0.848697)
+sprite_frames = SubResource("SpriteFrames_tqkpm")
+frame_progress = 0.805169
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="TextureRect2"]
+position = Vector2(166.52, 313.296)
+scale = Vector2(0.825482, 0.848697)
+sprite_frames = SubResource("SpriteFrames_tqkpm")
+frame_progress = 0.228781
+
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="TextureRect2"]
+position = Vector2(220.603, 313.296)
+scale = Vector2(0.825482, 0.848697)
+sprite_frames = SubResource("SpriteFrames_tqkpm")
+frame_progress = 0.473833
+
+[node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="TextureRect2"]
+position = Vector2(273.737, 313.296)
+scale = Vector2(0.825482, 0.848697)
+sprite_frames = SubResource("SpriteFrames_tqkpm")
+frame_progress = 0.839994
+
+[node name="Label" type="Label" parent="TextureRect2"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 150.864
+offset_top = 55.978
+offset_right = 512.864
+offset_bottom = 103.978
+text = "Felicidades"
+label_settings = SubResource("LabelSettings_uf6gu")
+
+[node name="Label2" type="Label" parent="TextureRect2"]
+visible = false
+layout_mode = 0
+offset_left = 220.128
+offset_top = 145.362
+offset_right = 260.128
+offset_bottom = 190.362
+pivot_offset = Vector2(10.375, 22.7827)
+text = "u"
+label_settings = SubResource("LabelSettings_fk32w")
+
+[node name="Label3" type="Label" parent="TextureRect2"]
+visible = false
+layout_mode = 0
+offset_left = 96.7806
+offset_top = 145.362
+offset_right = 136.781
+offset_bottom = 190.362
+pivot_offset = Vector2(11.2631, 22.1495)
+text = "e"
+label_settings = SubResource("LabelSettings_ujyf3")
+
+[node name="Label4" type="Label" parent="TextureRect2"]
+visible = false
+layout_mode = 0
+offset_left = 179.329
+offset_top = 145.362
+offset_right = 219.329
+offset_bottom = 190.362
+pivot_offset = Vector2(10.5107, 22.3112)
+text = "o
+"
+label_settings = SubResource("LabelSettings_tlylv")
+
+[node name="Label5" type="Label" parent="TextureRect2"]
+visible = false
+layout_mode = 0
+offset_left = 136.631
+offset_top = 149.876
+offset_right = 176.631
+offset_bottom = 194.876
+pivot_offset = Vector2(3.38815, 22.4814)
+text = "i
+"
+label_settings = SubResource("LabelSettings_v5utr")
+
+[node name="Label6" type="Label" parent="TextureRect2"]
+visible = false
+layout_mode = 0
+offset_left = 54.0833
+offset_top = 145.362
+offset_right = 94.0833
+offset_bottom = 190.362
+pivot_offset = Vector2(10.6702, 22.5717)
+text = "a
+"
+label_settings = SubResource("LabelSettings_3vwjb")
+
+[node name="TextureRect7" type="TextureRect" parent="TextureRect2"]
+layout_mode = 0
+offset_left = 351.0
+offset_top = 101.0
+offset_right = 501.0
+offset_bottom = 218.0
+texture = ExtResource("7_u2ep2")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("16_jxcdg")
+volume_db = -7.429
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_5oie7")
+volume_db = -17.902
+
+[node name="Ambientacion" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("18_y1jxn")
+autoplay = true
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 660.0
+offset_top = 355.0
+offset_right = 809.0
+offset_bottom = 494.0
+flat = true
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="Button"]
+position = Vector2(73, 73)
+scale = Vector2(0.352601, 0.318)
+sprite_frames = SubResource("SpriteFrames_brr4u")
+animation = &"animacion"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_r1ctc")
+}
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_plvhn")
+}
+
+[node name="AnimationPlayer3" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ihgln")
+}
+
+[node name="AnimationPlayer4" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_arsae")
+}
+
+[node name="AnimationPlayer5" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_hh1fo")
+}
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

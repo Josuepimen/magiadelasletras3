@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ct4h24d4rkbmh"
+path="res://.godot/imported/REPRESENTAR E IMITAR .mp3-103138761432893cc6aa059f3fb0c121.mp3str"
+
+[deps]
+
+source_file="res://musica2/REPRESENTAR E IMITAR .mp3"
+dest_files=["res://.godot/imported/REPRESENTAR E IMITAR .mp3-103138761432893cc6aa059f3fb0c121.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

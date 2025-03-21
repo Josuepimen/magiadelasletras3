@@ -1,0 +1,222 @@
+[gd_scene load_steps=28 format=3 uid="uid://dxrjlq1khj7i1"]
+
+[ext_resource type="Texture2D" uid="uid://bletq1a4tdgaw" path="res://fondos/ayay.png" id="1_knof7"]
+[ext_resource type="Script" path="res://level2.gd" id="1_qab70"]
+[ext_resource type="Texture2D" uid="uid://dypxdoi11leoa" path="res://ahora si, tengo fe este es la definitiva.png" id="2_iobih"]
+[ext_resource type="Texture2D" uid="uid://dm2vf8l82ewnq" path="res://objetos/222.png" id="5_kuei4"]
+[ext_resource type="FontFile" uid="uid://psj8vsfyanun" path="res://objetos/Cute Dino.ttf" id="5_nwxoa"]
+[ext_resource type="Texture2D" uid="uid://ci0n1ly7vquba" path="res://objetos/O falsa.png" id="5_rr0ed"]
+[ext_resource type="Texture2D" uid="uid://bhxip134r1jjt" path="res://objetos/I verdadera.png" id="8_5yv0k"]
+[ext_resource type="Script" path="res://uwuwu.gd" id="8_nkava"]
+[ext_resource type="AudioStream" uid="uid://mg1711ak1ydb" path="res://musica2/INCORRECTO.mp3" id="9_4i380"]
+[ext_resource type="Texture2D" uid="uid://5udss88gfk2i" path="res://objetos/A verdadera.png" id="9_04qac"]
+[ext_resource type="Texture2D" uid="uid://oatrgflbuc5d" path="res://objetos/u fondo.png" id="9_fmxsq"]
+[ext_resource type="PackedScene" uid="uid://de1v66babotwb" path="res://drag2.tscn" id="10_34wok"]
+[ext_resource type="Script" path="res://gafgsdf.gd" id="11_gpcjf"]
+[ext_resource type="PackedScene" uid="uid://b2a3vsvil341k" path="res://drop_spot2.tscn" id="11_nw23c"]
+[ext_resource type="Script" path="res://vbmjcghj.gd" id="13_85wux"]
+[ext_resource type="AudioStream" uid="uid://cl4sdkyqc21ae" path="res://musica2/SEGUNDA VOCAL .mp3" id="13_veu23"]
+[ext_resource type="Texture2D" uid="uid://cco3f5owadfe3" path="res://objetos/MEsa2.png" id="14_4d8ko"]
+[ext_resource type="Script" path="res://gjcbhn.gd" id="15_4tpl3"]
+[ext_resource type="Script" path="res://vcnvbn.gd" id="16_8lmpl"]
+[ext_resource type="Texture2D" uid="uid://uwom7j53l1ru" path="res://personajes/niño invalido.png" id="16_ngtqa"]
+[ext_resource type="Texture2D" uid="uid://bpd7jgwnakjyp" path="res://Carpeta con las animaciones/maestraa.png" id="19_xij8m"]
+[ext_resource type="Texture2D" uid="uid://bay44b82yi2ie" path="res://objetos/boton retroceder v2.png" id="20_oyn8j"]
+[ext_resource type="Texture2D" uid="uid://cdnixe1sbspr3" path="res://Carpeta con las animaciones/maestrita.png" id="20_rsfqq"]
+[ext_resource type="Texture2D" uid="uid://bqahs20ulq0on" path="res://objetos/boton retroceder v3.png" id="21_pq0hh"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_t27uk"]
+font = ExtResource("5_nwxoa")
+font_size = 28
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h6sra"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_oyn8j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_pq0hh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_chln1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_xij8m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_rsfqq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="level" type="Node2D"]
+texture_filter = 1
+scale = Vector2(1.00123, 0.977867)
+script = ExtResource("1_qab70")
+
+[node name="Sprite2D10" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(575.909, 324.101)
+scale = Vector2(1.15382, 1.10367)
+texture = ExtResource("2_iobih")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(534, 348)
+scale = Vector2(0.754, 0.42)
+texture = ExtResource("1_knof7")
+
+[node name="Sprite2D11" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(583.5, 320.5)
+scale = Vector2(1.012, 1.01)
+texture = ExtResource("5_kuei4")
+
+[node name="Label2" type="Label" parent="."]
+texture_filter = 1
+offset_left = 574.0
+offset_top = 308.0
+offset_right = 615.0
+offset_bottom = 337.0
+text = "S"
+label_settings = SubResource("LabelSettings_t27uk")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label3" type="Label" parent="."]
+texture_filter = 1
+offset_left = 617.0
+offset_top = 307.0
+offset_right = 654.0
+offset_bottom = 341.0
+text = "A"
+label_settings = SubResource("LabelSettings_t27uk")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label4" type="Label" parent="."]
+texture_filter = 1
+offset_left = 486.0
+offset_top = 307.0
+offset_right = 545.0
+offset_bottom = 354.0
+text = "M"
+label_settings = SubResource("LabelSettings_t27uk")
+metadata/_edit_use_anchors_ = true
+
+[node name="drop_spot" parent="." instance=ExtResource("11_nw23c")]
+texture_filter = 1
+position = Vector2(543, 318)
+
+[node name="Sprite2D9" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(539, 416)
+scale = Vector2(1.48, 0.82)
+texture = ExtResource("5_kuei4")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(603, 417)
+scale = Vector2(2.7, 2.3)
+texture = ExtResource("5_rr0ed")
+script = ExtResource("8_nkava")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Sprite2D3"]
+stream = ExtResource("9_4i380")
+volume_db = 2.0
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(405.083, 416.5)
+scale = Vector2(1.98337, 2.70002)
+texture = ExtResource("9_04qac")
+script = ExtResource("11_gpcjf")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Sprite2D4"]
+stream = ExtResource("9_4i380")
+volume_db = 2.0
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(539, 417)
+scale = Vector2(2.56663, 2.2625)
+texture = ExtResource("8_5yv0k")
+script = ExtResource("13_85wux")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Sprite2D5"]
+stream = ExtResource("9_4i380")
+volume_db = 2.0
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(663, 417)
+scale = Vector2(2.24999, 2.35)
+texture = ExtResource("9_fmxsq")
+script = ExtResource("15_4tpl3")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Sprite2D6"]
+stream = ExtResource("9_4i380")
+volume_db = 2.0
+
+[node name="Sprite2D7" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(746, 346.5)
+scale = Vector2(2.93333, 2.5)
+script = ExtResource("16_8lmpl")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Sprite2D7"]
+stream = ExtResource("9_4i380")
+volume_db = 2.0
+
+[node name="Sprite2D8" parent="." instance=ExtResource("10_34wok")]
+position = Vector2(471.663, 415.643)
+scale = Vector2(2.26736, 2.12856)
+
+[node name="Mesa" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(424, 321.5)
+scale = Vector2(0.130612, 0.139796)
+texture = ExtResource("14_4d8ko")
+
+[node name="NiñoInvalido" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(248, 540)
+scale = Vector2(0.64, 0.538462)
+texture = ExtResource("16_ngtqa")
+flip_h = true
+
+[node name="Button" type="Button" parent="."]
+texture_filter = 1
+offset_left = 7.0
+offset_top = 4.0
+offset_right = 133.0
+offset_bottom = 100.0
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Button"]
+texture_filter = 1
+position = Vector2(50.5, 36)
+scale = Vector2(1.38333, 1.3)
+sprite_frames = SubResource("SpriteFrames_h6sra")
+flip_h = true
+
+[node name="2" type="AudioStreamPlayer2D" parent="."]
+texture_filter = 1
+stream = ExtResource("13_veu23")
+volume_db = 15.0
+attenuation = 0.0110485
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(109, 431)
+sprite_frames = SubResource("SpriteFrames_chln1")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

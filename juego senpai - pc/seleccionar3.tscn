@@ -1,0 +1,479 @@
+[gd_scene load_steps=67 format=3 uid="uid://bnkd6a6a28c4y"]
+
+[ext_resource type="Script" path="res://seleccionar3.gd" id="1_l33q2"]
+[ext_resource type="Texture2D" uid="uid://dmo13lhhnbtgo" path="res://fondos/representaryaa.png" id="2_qv8xl"]
+[ext_resource type="Script" path="res://7658.gd" id="3_1duu5"]
+[ext_resource type="Script" path="res://xc.gd" id="5_g5ytd"]
+[ext_resource type="AudioStream" uid="uid://btfk8tj4val2t" path="res://musica2/PIEDRA I.mp3" id="5_r44bq"]
+[ext_resource type="Texture2D" uid="uid://o2jhrercel7s" path="res://objetos/piedraanim.png" id="6_1l3yu"]
+[ext_resource type="Script" path="res://dcbv.gd" id="7_5xiq4"]
+[ext_resource type="Texture2D" uid="uid://c8jkvbcds3r36" path="res://objetos/piedranim.png" id="7_8hlwl"]
+[ext_resource type="Texture2D" uid="uid://ccr3ahqntu836" path="res://objetos/I de piedraa.png" id="7_ej21u"]
+[ext_resource type="Texture2D" uid="uid://yjn6o7loerwc" path="res://objetos/I de piedraaaaa.png" id="8_rsj3p"]
+[ext_resource type="Script" path="res://cxb.gd" id="9_8jsra"]
+[ext_resource type="AudioStream" uid="uid://bqtmoik08p17b" path="res://musica2/sonido presionar2.mp3" id="9_h2g18"]
+[ext_resource type="Script" path="res://zd.gd" id="11_gy6br"]
+[ext_resource type="AudioStream" uid="uid://cqsgf3ta0son5" path="res://MATERO A (1).mp3" id="11_kg5vl"]
+[ext_resource type="Texture2D" uid="uid://bhaae2qgx4p20" path="res://objetos/A de macetaa.png" id="12_erhjx"]
+[ext_resource type="Texture2D" uid="uid://blvqvtbi6qwby" path="res://objetos/Matero.png" id="12_vjj13"]
+[ext_resource type="Texture2D" uid="uid://dg4letgyme1ug" path="res://objetos/a de macetaaa.png" id="13_87wke"]
+[ext_resource type="Texture2D" uid="uid://dwphcu3siuo6i" path="res://objetos/Matero 1.png" id="13_yvjje"]
+[ext_resource type="AudioStream" uid="uid://d3i7yj6qo3bo8" path="res://musica2/ESTANTE E.mp3" id="15_eye56"]
+[ext_resource type="Texture2D" uid="uid://bok1ujwe2g46r" path="res://objetos/estantee.png" id="16_7tgwd"]
+[ext_resource type="Texture2D" uid="uid://csnsh0m0dfv6h" path="res://objetos/estanteee.png" id="17_isp6h"]
+[ext_resource type="Texture2D" uid="uid://b055fkyvgtyg6" path="res://objetos/Uanimacion.png" id="18_3es7g"]
+[ext_resource type="Texture2D" uid="uid://dd8154ynaukfa" path="res://objetos/estanteeee E.png" id="19_7rjii"]
+[ext_resource type="Texture2D" uid="uid://q0k6jtodki72" path="res://objetos/Uanimacionn.png" id="19_cf2s5"]
+[ext_resource type="Texture2D" uid="uid://cwbhnbycmw8t3" path="res://objetos/estanteee eee.png" id="20_d44b4"]
+[ext_resource type="Texture2D" uid="uid://m5c0xgr7a7ro" path="res://objetos/cuadrooo.png" id="20_tblas"]
+[ext_resource type="Texture2D" uid="uid://bjbe0y4lad5i8" path="res://objetos/cuadroouwu.png" id="21_5f0po"]
+[ext_resource type="Texture2D" uid="uid://uydgovjbobgv" path="res://objetos/flooorr.png" id="21_s8tdt"]
+[ext_resource type="Texture2D" uid="uid://dl61yukgn0wmt" path="res://objetos/floorrr.png" id="22_uja6f"]
+[ext_resource type="AudioStream" uid="uid://bmjty3lae8nwe" path="res://musica2/O FLOR.mp3" id="22_ujjxy"]
+[ext_resource type="Texture2D" uid="uid://6a8dyx6st52y" path="res://objetos/floooor oo.png" id="25_8jhrl"]
+[ext_resource type="AudioStream" uid="uid://wllvdtw6ykqa" path="res://musica2/CUADRO U.mp3" id="25_ikobi"]
+[ext_resource type="Texture2D" uid="uid://ctwj88u6hcg7m" path="res://objetos/floor O.png" id="26_3qxlt"]
+[ext_resource type="Texture2D" uid="uid://cbuvomll6dlh3" path="res://objetos/Mochilaa.png" id="32_bhjq5"]
+[ext_resource type="AudioStream" uid="uid://c1qwtsjc4kuhi" path="res://BIENVENIDA REPRESENTAR E IMITAR (1).mp3" id="34_pjvao"]
+[ext_resource type="Texture2D" uid="uid://c3gem8j3jtogo" path="res://objetos/mochilaaaayanomecabienestamonda.png" id="37_sco77"]
+[ext_resource type="Texture2D" uid="uid://xgia3a20vnft" path="res://objetos/clickmanitoowo.png" id="38_isrnc"]
+[ext_resource type="Texture2D" uid="uid://bkgux572mvwgd" path="res://objetos/mano animada uwu.png" id="39_mxrif"]
+[ext_resource type="Texture2D" uid="uid://cb11ka0aj3gid" path="res://Carpeta con las animaciones/niño obeso animacion.png" id="40_4h5tr"]
+[ext_resource type="Texture2D" uid="uid://bqahs20ulq0on" path="res://objetos/boton retroceder v3.png" id="41_apfyx"]
+[ext_resource type="Texture2D" uid="uid://dbqi4y1ljyk3c" path="res://Carpeta con las animaciones/niñoo.png" id="41_mtpcm"]
+[ext_resource type="Texture2D" uid="uid://bay44b82yi2ie" path="res://objetos/boton retroceder v2.png" id="42_6wbg8"]
+[ext_resource type="Texture2D" uid="uid://bpd7jgwnakjyp" path="res://Carpeta con las animaciones/maestraa.png" id="43_sp3w2"]
+[ext_resource type="Texture2D" uid="uid://cdnixe1sbspr3" path="res://Carpeta con las animaciones/maestrita.png" id="44_16wj2"]
+[ext_resource type="AudioStream" uid="uid://c86tbt0lms3j6" path="res://musica/PRESIONA EL BOTÓN .mp3" id="45_2aac1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a7vsy"]
+size = Vector2(22, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s0vbe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_1l3yu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_8hlwl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kdpqw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_ej21u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_rsj3p")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pif3o"]
+size = Vector2(24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_utkvq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_vjj13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_yvjje")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tbc3w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_erhjx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_87wke")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3qqdj"]
+size = Vector2(24, 23)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jqpuv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_7tgwd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_isp6h")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ej8el"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_7rjii")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_d44b4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0ah1j"]
+size = Vector2(25, 25)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0m55y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_s8tdt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_uja6f")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vwikk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_8jhrl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_3qxlt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w7tme"]
+size = Vector2(28, 21)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5murn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_3es7g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_cf2s5")
+}],
+"loop": true,
+"name": &"U",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_km2l3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_tblas")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_5f0po")
+}],
+"loop": true,
+"name": &"animacion",
+"speed": 1.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3k3bu"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h8tcg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("32_bhjq5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_sco77")
+}],
+"loop": true,
+"name": &"boton",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g32wg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("38_isrnc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_mxrif")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ckjkc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("40_4h5tr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_mtpcm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wu62e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("41_apfyx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_6wbg8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q0m5n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("43_sp3w2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_16wj2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_l33q2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(577.5, 323.999)
+scale = Vector2(1.153, 1.08667)
+texture = ExtResource("2_qv8xl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(438.5, 204)
+scale = Vector2(0.75, 0.72)
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(171, 280)
+script = ExtResource("3_1duu5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(3, -5)
+shape = SubResource("RectangleShape2D_a7vsy")
+
+[node name="pronunciacionpiedra" type="AudioStreamPlayer2D" parent="Area2D"]
+stream = ExtResource("5_r44bq")
+volume_db = 15.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
+position = Vector2(689, 99)
+sprite_frames = SubResource("SpriteFrames_s0vbe")
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Area2D"]
+position = Vector2(2, -5)
+scale = Vector2(0.8, 0.8)
+sprite_frames = SubResource("SpriteFrames_kdpqw")
+
+[node name="Sonido cuando se presiona" type="AudioStreamPlayer" parent="Area2D"]
+stream = ExtResource("9_h2g18")
+
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2(420, 284)
+script = ExtResource("5_g5ytd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(1, -7)
+shape = SubResource("RectangleShape2D_pif3o")
+
+[node name="pronunciacionmaceta" type="AudioStreamPlayer2D" parent="Area2D2"]
+stream = ExtResource("11_kg5vl")
+volume_db = 15.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D2"]
+position = Vector2(323, -3)
+sprite_frames = SubResource("SpriteFrames_utkvq")
+frame_progress = 0.114436
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Area2D2"]
+position = Vector2(1.49999, -7.49999)
+scale = Vector2(0.575, 0.575)
+sprite_frames = SubResource("SpriteFrames_tbc3w")
+
+[node name="Sonido cuando se presiona" type="AudioStreamPlayer" parent="Area2D2"]
+stream = ExtResource("9_h2g18")
+
+[node name="Area2D3" type="Area2D" parent="."]
+position = Vector2(-335, -165)
+script = ExtResource("7_5xiq4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
+position = Vector2(575, 414)
+shape = SubResource("RectangleShape2D_3qqdj")
+
+[node name="pronunciacionestante" type="AudioStreamPlayer2D" parent="Area2D3"]
+position = Vector2(839, 159)
+stream = ExtResource("15_eye56")
+volume_db = 15.0
+attenuation = 0.00728932
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D3"]
+position = Vector2(1300, 438)
+scale = Vector2(0.348, 0.372)
+sprite_frames = SubResource("SpriteFrames_jqpuv")
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Area2D3"]
+position = Vector2(572, 414.5)
+scale = Vector2(0.65, 0.525)
+sprite_frames = SubResource("SpriteFrames_ej8el")
+frame_progress = 0.55452
+
+[node name="Sonido cuando se presiona" type="AudioStreamPlayer" parent="Area2D3"]
+stream = ExtResource("9_h2g18")
+
+[node name="Area2D4" type="Area2D" parent="."]
+position = Vector2(-529, 67)
+script = ExtResource("9_8jsra")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4"]
+position = Vector2(641, 333)
+shape = SubResource("RectangleShape2D_0ah1j")
+
+[node name="pisopronunciacion" type="AudioStreamPlayer2D" parent="Area2D4"]
+stream = ExtResource("22_ujjxy")
+volume_db = 15.0
+attenuation = 0.0236831
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D4"]
+position = Vector2(1275, 406)
+sprite_frames = SubResource("SpriteFrames_0m55y")
+frame_progress = 0.211514
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Area2D4"]
+position = Vector2(641, 332)
+scale = Vector2(0.55, 0.575)
+sprite_frames = SubResource("SpriteFrames_vwikk")
+
+[node name="Sonido cuando se presiona" type="AudioStreamPlayer" parent="Area2D4"]
+stream = ExtResource("9_h2g18")
+
+[node name="Area2D5" type="Area2D" parent="."]
+position = Vector2(93, -406)
+script = ExtResource("11_gy6br")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D5"]
+position = Vector2(712, 494.5)
+shape = SubResource("RectangleShape2D_w7tme")
+
+[node name="pronunciacioncuadro" type="AudioStreamPlayer2D" parent="Area2D5"]
+stream = ExtResource("25_ikobi")
+volume_db = 15.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D5"]
+position = Vector2(709, 496)
+scale = Vector2(0.624999, 0.4)
+sprite_frames = SubResource("SpriteFrames_5murn")
+animation = &"U"
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Area2D5"]
+texture_filter = 1
+position = Vector2(899.391, 897)
+scale = Vector2(0.477334, 0.412018)
+sprite_frames = SubResource("SpriteFrames_km2l3")
+animation = &"animacion"
+frame_progress = 0.49171
+
+[node name="Sonido cuando se presiona" type="AudioStreamPlayer" parent="Area2D5"]
+stream = ExtResource("9_h2g18")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("34_pjvao")
+volume_db = 15.0
+attenuation = 0.0213445
+
+[node name="Button" type="Button" parent="."]
+offset_left = 35.0
+offset_top = 489.0
+offset_right = 214.0
+offset_bottom = 645.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3k3bu")
+flat = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Button"]
+position = Vector2(91, 75)
+scale = Vector2(0.502, 0.398)
+sprite_frames = SubResource("SpriteFrames_h8tcg")
+animation = &"boton"
+frame_progress = 0.389843
+
+[node name="Mano" type="AnimatedSprite2D" parent="."]
+position = Vector2(167, 579)
+sprite_frames = SubResource("SpriteFrames_g32wg")
+frame_progress = 0.971563
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1138, 565)
+scale = Vector2(1.545, 1.268)
+sprite_frames = SubResource("SpriteFrames_ckjkc")
+flip_h = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 6.0
+
+[node name="Regresote" type="Button" parent="."]
+offset_left = 7.0
+offset_top = 4.0
+offset_right = 133.0
+offset_bottom = 100.0
+flat = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Regresote"]
+position = Vector2(54.5, 43)
+scale = Vector2(1.51667, 1.23333)
+sprite_frames = SubResource("SpriteFrames_wu62e")
+flip_h = true
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(571, 513)
+scale = Vector2(0.84, 0.87)
+sprite_frames = SubResource("SpriteFrames_q0m5n")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("45_2aac1")
+volume_db = 7.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="Regresote" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Regresote" to="." method="_on_regresote_pressed"]

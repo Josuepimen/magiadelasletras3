@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cx1apdox8fitu"
+path="res://.godot/imported/MENU ARMAR Y CONSTRUIR .mp3-8b3844ea06e3e1d4ef6fca00fab99e33.mp3str"
+
+[deps]
+
+source_file="res://musica2/MENU ARMAR Y CONSTRUIR .mp3"
+dest_files=["res://.godot/imported/MENU ARMAR Y CONSTRUIR .mp3-8b3844ea06e3e1d4ef6fca00fab99e33.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

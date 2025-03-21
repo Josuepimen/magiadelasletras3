@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://i01ywmyg6fck"
+path="res://.godot/imported/WhatsApp Audio 2024-05-07 at 11.15.11 AM (online-audio-converter.com).mp3-3f070a4f870fc03ff25f2d496f3577b6.mp3str"
+
+[deps]
+
+source_file="res://musica2/WhatsApp Audio 2024-05-07 at 11.15.11 AM (online-audio-converter.com).mp3"
+dest_files=["res://.godot/imported/WhatsApp Audio 2024-05-07 at 11.15.11 AM (online-audio-converter.com).mp3-3f070a4f870fc03ff25f2d496f3577b6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

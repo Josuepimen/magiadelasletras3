@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ca35yu61scpda"
+path="res://.godot/imported/Menu Tutorial 2 3(mp3cut.net).mp3-a254c2e8efe557d9d77706718c7ad819.mp3str"
+
+[deps]
+
+source_file="res://musica2/Menu Tutorial 2 3(mp3cut.net).mp3"
+dest_files=["res://.godot/imported/Menu Tutorial 2 3(mp3cut.net).mp3-a254c2e8efe557d9d77706718c7ad819.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

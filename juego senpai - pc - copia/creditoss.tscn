@@ -1,0 +1,84 @@
+[gd_scene load_steps=10 format=3 uid="uid://c4x7r10hbrv3i"]
+
+[ext_resource type="Script" path="res://Creditoss.gd" id="1_00c7i"]
+[ext_resource type="Texture2D" uid="uid://ctrtmq3tet6cs" path="res://fondos/Créditos_20240806111742 (1).jpg" id="2_uws3i"]
+[ext_resource type="Texture2D" uid="uid://cbuvomll6dlh3" path="res://objetos/Mochilaa.png" id="3_bqnrx"]
+[ext_resource type="AudioStream" uid="uid://dnxdu8abv7tgy" path="res://musica2/CRÉDITOS.mp3" id="4_dg1em"]
+[ext_resource type="Texture2D" uid="uid://c3gem8j3jtogo" path="res://objetos/mochilaaaayanomecabienestamonda.png" id="4_jq5da"]
+[ext_resource type="Texture2D" uid="uid://xgia3a20vnft" path="res://objetos/clickmanitoowo.png" id="5_88mes"]
+[ext_resource type="Texture2D" uid="uid://bkgux572mvwgd" path="res://objetos/mano animada uwu.png" id="6_58l87"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l6t5e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_bqnrx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_jq5da")
+}],
+"loop": true,
+"name": &"animacion",
+"speed": 2.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cengj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_88mes")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_58l87")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Control" type="Control"]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_00c7i")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.011
+offset_right = 4.0
+offset_bottom = -0.128052
+texture = ExtResource("2_uws3i")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 926.0
+offset_top = 510.0
+offset_right = 1140.0
+offset_bottom = 632.0
+flat = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Button"]
+texture_filter = 1
+position = Vector2(120.5, 84)
+scale = Vector2(0.446, 0.268)
+sprite_frames = SubResource("SpriteFrames_l6t5e")
+animation = &"animacion"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_dg1em")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1085, 601)
+scale = Vector2(0.56, 0.453333)
+sprite_frames = SubResource("SpriteFrames_cengj")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

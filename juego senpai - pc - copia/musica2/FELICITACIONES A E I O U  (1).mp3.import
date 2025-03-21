@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dqw71xj6at42l"
+path="res://.godot/imported/FELICITACIONES A E I O U  (1).mp3-cfa89903ab9804b65b73964b24a2ac95.mp3str"
+
+[deps]
+
+source_file="res://musica2/FELICITACIONES A E I O U  (1).mp3"
+dest_files=["res://.godot/imported/FELICITACIONES A E I O U  (1).mp3-cfa89903ab9804b65b73964b24a2ac95.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

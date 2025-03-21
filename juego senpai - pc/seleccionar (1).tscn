@@ -1,0 +1,106 @@
+[gd_scene load_steps=11 format=3 uid="uid://dbchf4ed78ufb"]
+
+[ext_resource type="Script" path="res://seleccionar.gd" id="1_o773i"]
+[ext_resource type="Texture2D" uid="uid://drj7ai5oebv87" path="res://fondos/istockphoto-1132900932-612x612.jpg" id="1_wjs66"]
+[ext_resource type="Script" path="res://scoreseleccionar.gd" id="2_6flk0"]
+[ext_resource type="Script" path="res://areaseleccionar.gd" id="4_b05n2"]
+[ext_resource type="Texture2D" uid="uid://ck5b6gl4d4adr" path="res://objetos/alicate.png" id="5_4x7xf"]
+[ext_resource type="Texture2D" uid="uid://b88x3kcmi3hwj" path="res://objetos/destornillador.png" id="6_vho31"]
+[ext_resource type="Texture2D" uid="uid://cn5eve582xkyp" path="res://objetos/llave.png" id="7_rf0nn"]
+[ext_resource type="Texture2D" uid="uid://ddfe6m7ygo6ym" path="res://objetos (1)/martillo.png" id="8_4ja5h"]
+[ext_resource type="Texture2D" uid="uid://cy5st8bob0rht" path="res://objetos/serrucho.png" id="9_176hl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ucrld"]
+radius = 6.70827
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_o773i")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(575, 321.5)
+scale = Vector2(1.87255, 1.91369)
+texture = ExtResource("1_wjs66")
+
+[node name="score" type="Label" parent="."]
+offset_left = 34.0
+offset_top = 89.0
+offset_right = 233.0
+offset_bottom = 256.0
+theme_override_font_sizes/font_size = 59
+text = "puntos 0"
+script = ExtResource("2_6flk0")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(482, 215)
+script = ExtResource("4_b05n2")
+
+[node name="objeto1" type="Sprite2D" parent="Area2D"]
+position = Vector2(248.5, 178.25)
+rotation = -0.612211
+scale = Vector2(0.165, 0.11)
+texture = ExtResource("5_4x7xf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(246, 176)
+shape = SubResource("CircleShape2D_ucrld")
+
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2(1033, 29)
+script = ExtResource("4_b05n2")
+
+[node name="objeto1" type="Sprite2D" parent="Area2D2"]
+position = Vector2(37, 155)
+rotation = 0.560804
+scale = Vector2(0.165, 0.11)
+texture = ExtResource("6_vho31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(36, 152)
+shape = SubResource("CircleShape2D_ucrld")
+
+[node name="Area2D3" type="Area2D" parent="."]
+position = Vector2(263, 165)
+script = ExtResource("4_b05n2")
+
+[node name="objeto1" type="Sprite2D" parent="Area2D3"]
+position = Vector2(-89, 224)
+rotation = -0.107238
+scale = Vector2(0.165, 0.11)
+texture = ExtResource("7_rf0nn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
+position = Vector2(-90, 223)
+rotation = 0.587681
+shape = SubResource("CircleShape2D_ucrld")
+
+[node name="Area2D4" type="Area2D" parent="."]
+position = Vector2(110, 377)
+rotation = -0.000629405
+script = ExtResource("4_b05n2")
+
+[node name="objeto1" type="Sprite2D" parent="Area2D4"]
+position = Vector2(-90, 222)
+rotation = 0.575787
+scale = Vector2(0.165, 0.11)
+texture = ExtResource("8_4ja5h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4"]
+position = Vector2(-90, 223)
+rotation = 0.587681
+shape = SubResource("CircleShape2D_ucrld")
+
+[node name="Area2D5" type="Area2D" parent="."]
+position = Vector2(648, 418)
+rotation = -1.14933
+script = ExtResource("4_b05n2")
+
+[node name="objeto1" type="Sprite2D" parent="Area2D5"]
+position = Vector2(-97.6942, 223.804)
+rotation = 1.13997
+scale = Vector2(0.219714, 0.155619)
+texture = ExtResource("9_176hl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D5"]
+position = Vector2(-95.552, 217.087)
+rotation = 0.587681
+shape = SubResource("CircleShape2D_ucrld")

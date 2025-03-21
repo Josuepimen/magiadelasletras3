@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://donjuooycogxp"
+path="res://.godot/imported/TÍTULO_EXPRESAR Y CREAR .mp3-49bd5257715ac01ff80f136b66232dd9.mp3str"
+
+[deps]
+
+source_file="res://musica2/TÍTULO_EXPRESAR Y CREAR .mp3"
+dest_files=["res://.godot/imported/TÍTULO_EXPRESAR Y CREAR .mp3-49bd5257715ac01ff80f136b66232dd9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

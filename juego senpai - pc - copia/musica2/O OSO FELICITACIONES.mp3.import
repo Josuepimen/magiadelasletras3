@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c75atwgujec2q"
+path="res://.godot/imported/O OSO FELICITACIONES.mp3-567f3ad7d3b9e05561826e9d7fd65648.mp3str"
+
+[deps]
+
+source_file="res://musica2/O OSO FELICITACIONES.mp3"
+dest_files=["res://.godot/imported/O OSO FELICITACIONES.mp3-567f3ad7d3b9e05561826e9d7fd65648.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

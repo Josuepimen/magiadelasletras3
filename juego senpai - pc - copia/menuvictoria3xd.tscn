@@ -1,0 +1,204 @@
+[gd_scene load_steps=23 format=3 uid="uid://cxhibi6cu4s3a"]
+
+[ext_resource type="Script" path="res://menuvictoria3xd.gd" id="1_iyfnc"]
+[ext_resource type="Texture2D" uid="uid://c572u0n2tcscv" path="res://fondos/pixil-frame-0 (4).png" id="3_bcp4q"]
+[ext_resource type="FontFile" uid="uid://cr0nvsgkyuubt" path="res://objetos/04B_30__.TTF" id="4_b3n0i"]
+[ext_resource type="Texture2D" uid="uid://cbuvomll6dlh3" path="res://objetos/Mochilaa.png" id="4_n43xh"]
+[ext_resource type="Texture2D" uid="uid://4bnt17wiqwph" path="res://objetos/trofeo.png" id="7_svavr"]
+[ext_resource type="Texture2D" uid="uid://c3gem8j3jtogo" path="res://objetos/mochilaaaayanomecabienestamonda.png" id="9_3wlfc"]
+[ext_resource type="AudioStream" uid="uid://cdlvomxoncn4m" path="res://musica/MUY BIEN A E I O U  (2).mp3" id="10_dhq7j"]
+[ext_resource type="Texture2D" uid="uid://721c3f2o1wrf" path="res://objetos/amacetgaa.png" id="12_ul4ad"]
+[ext_resource type="Texture2D" uid="uid://7nkq5fp6kokj" path="res://objetos/E falsa.png" id="13_ivxqk"]
+[ext_resource type="Texture2D" uid="uid://bwwkrfvbe8ai1" path="res://objetos/I de piedraaaaa.png" id="14_takpt"]
+[ext_resource type="Texture2D" uid="uid://df26hqi3qkmmx" path="res://objetos/Letra O definitiva.png" id="15_byjcl"]
+[ext_resource type="Texture2D" uid="uid://oatrgflbuc5d" path="res://objetos/u fondo.png" id="16_7tbiy"]
+[ext_resource type="Texture2D" uid="uid://xgia3a20vnft" path="res://objetos/clickmanitoowo.png" id="17_owjaj"]
+[ext_resource type="Texture2D" uid="uid://bkgux572mvwgd" path="res://objetos/mano animada uwu.png" id="18_gb00o"]
+[ext_resource type="AudioStream" uid="uid://ckehea8b7mgi8" path="res://musica2/brass-fanfare-with-timpani-and-winchimes-reverberated-146260.mp3" id="19_ecw11"]
+[ext_resource type="AudioStream" uid="uid://dld0eaifnabtl" path="res://musica2/Viento 2.mp3" id="20_15qv3"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_d434j"]
+load_path = "res://.godot/imported/fondoatardecer.png-8999186d327b4cb7a3be5f18590a69e0.ctex"
+
+[sub_resource type="LabelSettings" id="LabelSettings_ekj2v"]
+font = ExtResource("4_b3n0i")
+font_size = 40
+font_color = Color(0, 0, 0, 1)
+outline_size = 11
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dllp4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_n43xh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_3wlfc")
+}],
+"loop": true,
+"name": &"animacion",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_772m0"]
+
+[sub_resource type="GDScript" id="GDScript_g7hqg"]
+script/source = "extends Button
+
+# Importa la variable global
+const Global = preload(\"res://singletonsscene.gd\")
+
+# Variable para verificar si el botón ya fue presionado
+var button_pressedg = false
+
+func _ready():
+	# Verifica si el botón debe estar desactivado y desactiva si es necesario
+	if Singletonsscene.isButtonDisabled(get_tree().get_current_scene().get_name(), get_name()):
+		hide()  # Oculta el botón si está desactivado
+
+func _on_pressed():
+	# Verifica si el botón ya fue presionado
+	if not button_pressedg:
+		# Suma un punto al contador global
+		Singletonsscene.add_puntaje()
+		print (\"sumando\")
+		# Desactiva el botón y lo hace invisible solo en esta escena
+		disableButton()
+		get_tree().change_scene_to_file(\"res://escenasentados2.tscn\")
+# Método para desactivar el botón y hacerlo invisible
+func disableButton():
+	var scene_name = get_tree().get_current_scene().get_name()
+	var button_name = get_name()
+	Singletonsscene.disableButton(scene_name, button_name, )
+	hide()  # Oculta el botón
+"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lajdk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_owjaj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_gb00o")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_iyfnc")
+
+[node name="Fondovictory121" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(573.5, 323.5)
+scale = Vector2(1.169, 0.659)
+texture = SubResource("CompressedTexture2D_d434j")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(556, 366)
+scale = Vector2(0.754, 0.456)
+texture = ExtResource("3_bcp4q")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 341.0
+offset_top = 232.0
+offset_right = 764.0
+offset_bottom = 273.0
+text = "Felicitaciones"
+label_settings = SubResource("LabelSettings_ekj2v")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 489.0
+offset_top = 389.0
+offset_right = 620.0
+offset_bottom = 503.0
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Button2"]
+position = Vector2(63, 59)
+scale = Vector2(0.484, 0.296)
+sprite_frames = SubResource("SpriteFrames_dllp4")
+animation = &"animacion"
+
+[node name="Button70" type="Button" parent="."]
+texture_filter = 1
+offset_left = 443.0
+offset_top = 375.0
+offset_right = 1072.0
+offset_bottom = 891.0
+scale = Vector2(0.30502, 0.302766)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_772m0")
+flat = true
+script = SubResource("GDScript_g7hqg")
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Button70"]
+position = Vector2(357.354, 237.807)
+scale = Vector2(1.61301, 0.990864)
+sprite_frames = SubResource("SpriteFrames_dllp4")
+animation = &"animacion"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(524, 350)
+stream = ExtResource("10_dhq7j")
+volume_db = 12.0
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.204
+autostart = true
+
+[node name="Trofeo" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(553, 332.5)
+scale = Vector2(3, 2.46)
+texture = ExtResource("7_svavr")
+
+[node name="Amacetgaa" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(360, 429)
+texture = ExtResource("12_ul4ad")
+
+[node name="EFalsa" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(399, 368)
+scale = Vector2(2.5, 2.8)
+texture = ExtResource("13_ivxqk")
+
+[node name="IDePiedraaaaa" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(461.5, 322.5)
+scale = Vector2(0.825, 0.825)
+texture = ExtResource("14_takpt")
+
+[node name="LetraODefinitiva" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(654, 324)
+scale = Vector2(3.2, 3.2)
+texture = ExtResource("15_byjcl")
+
+[node name="UFondo" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(710, 417)
+scale = Vector2(3.6, 3)
+texture = ExtResource("16_7tbiy")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(605, 472)
+sprite_frames = SubResource("SpriteFrames_lajdk")
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("19_ecw11")
+
+[node name="Ambientacion" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("20_15qv3")
+volume_db = 5.0
+autoplay = true
+
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button70" to="Button70" method="_on_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

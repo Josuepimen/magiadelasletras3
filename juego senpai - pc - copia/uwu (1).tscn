@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://y54p32roypqi"]
+
+[ext_resource type="Texture2D" uid="uid://dlc4v0luq60rc" path="res://objetos/pera formato 1.png" id="1_lp1fj"]
+[ext_resource type="Script" path="res://arrastrar.gd" id="2_ckxg2"]
+
+[node name="TextureRect" type="TextureRect"]
+offset_left = 123.0
+offset_top = 38.0
+offset_right = 248.0
+offset_bottom = 165.0
+texture = ExtResource("1_lp1fj")
+script = ExtResource("2_ckxg2")
+
+[node name="Panel" type="Panel" parent="."]
+show_behind_parent = true
+layout_mode = 0
+offset_left = 1.0
+offset_top = -23.0
+offset_right = 120.0
+offset_bottom = 123.0
+mouse_filter = 2
+
+[node name="Node2D2" type="Node2D" parent="."]

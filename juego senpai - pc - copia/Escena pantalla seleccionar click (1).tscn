@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://dv5foocrkptyr"]
+
+[ext_resource type="Script" path="res://ObjectArea.gd" id="1_b8ysg"]
+[ext_resource type="Texture2D" uid="uid://dlc4v0luq60rc" path="res://objetos/pera formato 1.png" id="2_1x45u"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ke1cl"]
+radius = 34.1321
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ObjectArea" type="Area2D" parent="."]
+script = ExtResource("1_b8ysg")
+
+[node name="ObjectLabel" type="Label" parent="ObjectArea"]
+offset_left = 76.0
+offset_top = -7.0
+offset_right = 275.0
+offset_bottom = 160.0
+theme_override_font_sizes/font_size = 59
+text = "puntos"
+
+[node name="Sprite2D" type="Sprite2D" parent="ObjectArea"]
+position = Vector2(314, 170)
+texture = ExtResource("2_1x45u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectArea"]
+position = Vector2(313, 153)
+shape = SubResource("CircleShape2D_ke1cl")
+
+[connection signal="mouse_entered" from="ObjectArea" to="ObjectArea" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ObjectArea" to="ObjectArea" method="_on_mouse_exited"]

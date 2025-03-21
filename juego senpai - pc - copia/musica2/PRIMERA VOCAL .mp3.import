@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cej3fm2nnf814"
+path="res://.godot/imported/PRIMERA VOCAL .mp3-a3e6703c519c8250bdb42e0fbbe2f0fa.mp3str"
+
+[deps]
+
+source_file="res://musica2/PRIMERA VOCAL .mp3"
+dest_files=["res://.godot/imported/PRIMERA VOCAL .mp3-a3e6703c519c8250bdb42e0fbbe2f0fa.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

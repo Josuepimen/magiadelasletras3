@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dys0yjcojspqc"
+path="res://.godot/imported/E de Mesa.mp3-70e5a1dff381e16a5d9104538204ae04.mp3str"
+
+[deps]
+
+source_file="res://musica2/E de Mesa.mp3"
+dest_files=["res://.godot/imported/E de Mesa.mp3-70e5a1dff381e16a5d9104538204ae04.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

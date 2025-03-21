@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cfe5m38nubtix"
+path="res://.godot/imported/Presiona el botón (1) (online-audio-converter.com).mp3-0b39584839127d41a0c9d9deedea0e0f.mp3str"
+
+[deps]
+
+source_file="res://musica2/Presiona el botón (1) (online-audio-converter.com).mp3"
+dest_files=["res://.godot/imported/Presiona el botón (1) (online-audio-converter.com).mp3-0b39584839127d41a0c9d9deedea0e0f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

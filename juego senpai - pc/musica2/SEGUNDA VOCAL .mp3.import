@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cl4sdkyqc21ae"
+path="res://.godot/imported/SEGUNDA VOCAL .mp3-964891990b1f960f1203a409fcf91de0.mp3str"
+
+[deps]
+
+source_file="res://musica2/SEGUNDA VOCAL .mp3"
+dest_files=["res://.godot/imported/SEGUNDA VOCAL .mp3-964891990b1f960f1203a409fcf91de0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

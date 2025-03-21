@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://cwhh6k0b6g6d5"]
+
+[ext_resource type="Script" path="res://arrastar.gd" id="1_jbw5a"]
+[ext_resource type="Texture2D" uid="uid://dlc4v0luq60rc" path="res://objetos/pera formato 1.png" id="2_56bl0"]
+[ext_resource type="Script" path="res://soltar.gd" id="3_y3ftm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sb3nl"]
+size = Vector2(156, 81)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8fpga"]
+size = Vector2(189, 87)
+
+[node name="Node2D" type="Node2D" groups=["draggable"]]
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(31, 19)
+scale = Vector2(1.40129, 1.35647)
+script = ExtResource("1_jbw5a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(680, 320)
+shape = SubResource("RectangleShape2D_sb3nl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+position = Vector2(671, 336)
+texture = ExtResource("2_56bl0")
+
+[node name="Node2D" type="Node2D" parent="." groups=["draggable"]]
+position = Vector2(152, 78)
+script = ExtResource("3_y3ftm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D"]
+position = Vector2(22, 2)
+shape = SubResource("RectangleShape2D_8fpga")

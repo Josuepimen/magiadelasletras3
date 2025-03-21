@@ -1,0 +1,41 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Juego2"
+run/main_scene="res://escenas/main.tscn"
+config/features=PackedStringArray("4.2", "GL Compatibility")
+boot_splash/image="res://fondos/menu carga.png"
+config/icon="res://icon.svg"
+boot_splash/size/viewport_height=648
+boot_splash/size/viewport_width=1152
+
+[autoload]
+
+singletonscore="*res://singletongd.gd"
+MusicPlayer="*res://music_player.tscn"
+Singletonsscene="*res://singletonsscene.gd"
+
+[display]
+
+window/stretch/mode="viewport"
+
+[file_customization]
+
+folder_colors={
+"res://musica2/": "yellow"
+}
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true

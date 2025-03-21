@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cf7jfqynyyjar"
+path="res://.godot/imported/4 VICTORIA O.mp3-8acb344a7590f6d56e8f603dc65dc824.mp3str"
+
+[deps]
+
+source_file="res://musica2/4 VICTORIA O.mp3"
+dest_files=["res://.godot/imported/4 VICTORIA O.mp3-8acb344a7590f6d56e8f603dc65dc824.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

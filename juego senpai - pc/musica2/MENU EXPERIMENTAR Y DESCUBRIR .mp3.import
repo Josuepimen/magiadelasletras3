@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://djsvj2dsl6ya"
+path="res://.godot/imported/MENU EXPERIMENTAR Y DESCUBRIR .mp3-497ef8dabe27845884a39d1856293430.mp3str"
+
+[deps]
+
+source_file="res://musica2/MENU EXPERIMENTAR Y DESCUBRIR .mp3"
+dest_files=["res://.godot/imported/MENU EXPERIMENTAR Y DESCUBRIR .mp3-497ef8dabe27845884a39d1856293430.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

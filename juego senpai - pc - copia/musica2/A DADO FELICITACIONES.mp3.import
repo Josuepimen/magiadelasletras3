@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cgtnwn5dbjci3"
+path="res://.godot/imported/A DADO FELICITACIONES.mp3-20e61ada8fb1bb831ae316d8e4bbb7eb.mp3str"
+
+[deps]
+
+source_file="res://musica2/A DADO FELICITACIONES.mp3"
+dest_files=["res://.godot/imported/A DADO FELICITACIONES.mp3-20e61ada8fb1bb831ae316d8e4bbb7eb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

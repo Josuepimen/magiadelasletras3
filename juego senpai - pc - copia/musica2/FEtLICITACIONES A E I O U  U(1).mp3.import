@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cw2okefxhmfk8"
+path="res://.godot/imported/FEtLICITACIONES A E I O U  U(1).mp3-5c10497b14d67fc51d13e0cb45c0564e.mp3str"
+
+[deps]
+
+source_file="res://musica2/FEtLICITACIONES A E I O U  U(1).mp3"
+dest_files=["res://.godot/imported/FEtLICITACIONES A E I O U  U(1).mp3-5c10497b14d67fc51d13e0cb45c0564e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

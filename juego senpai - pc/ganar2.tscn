@@ -1,0 +1,366 @@
+[gd_scene load_steps=35 format=3 uid="uid://bc338fpe4amf2"]
+
+[ext_resource type="FontFile" uid="uid://c73rv4ejrg5bm" path="res://objetos/Cute Dino.ttf" id="1_bo7gx"]
+[ext_resource type="Script" path="res://ganar32.gd" id="1_il7p6"]
+[ext_resource type="Texture2D" uid="uid://b11g3b5v5m5d2" path="res://fondos/fondocielo2.png" id="3_c2h3f"]
+[ext_resource type="Texture2D" uid="uid://c3v7kyh4ocsm0" path="res://Carpeta con las animaciones/globo4.png" id="4_xm8io"]
+[ext_resource type="Texture2D" uid="uid://txfdieoue6c" path="res://Carpeta con las animaciones/globoazul.png" id="5_3wdlt"]
+[ext_resource type="Texture2D" uid="uid://dhp5wwsqsh153" path="res://Carpeta con las animaciones/globorojo.png" id="6_lxgup"]
+[ext_resource type="Texture2D" uid="uid://mghe4bixxmw8" path="res://Carpeta con las animaciones/globo blanco.png" id="7_iyau7"]
+[ext_resource type="AudioStream" uid="uid://by8itlehn0cu2" path="res://musica2/E MESA FELICITACIONES.mp3" id="8_p4uu3"]
+[ext_resource type="Texture2D" uid="uid://cbuvomll6dlh3" path="res://objetos/Mochilaa.png" id="10_1ayar"]
+[ext_resource type="Texture2D" uid="uid://c3gem8j3jtogo" path="res://objetos/mochilaaaayanomecabienestamonda.png" id="11_wx2wc"]
+[ext_resource type="Texture2D" uid="uid://t05jcs3j1mlm" path="res://objetos/MEsa2.png" id="13_s01ob"]
+[ext_resource type="AudioStream" uid="uid://ckehea8b7mgi8" path="res://musica2/brass-fanfare-with-timpani-and-winchimes-reverberated-146260.mp3" id="15_m7ld7"]
+[ext_resource type="Texture2D" uid="uid://cy4spsgyte14r" path="res://Carpeta con las animaciones/elefante11.png" id="16_p4hjn"]
+[ext_resource type="Texture2D" uid="uid://xgia3a20vnft" path="res://objetos/clickmanitoowo.png" id="16_x3a0q"]
+[ext_resource type="Texture2D" uid="uid://d170no57flahm" path="res://Carpeta con las animaciones/elefante22.png" id="17_2lhdi"]
+[ext_resource type="Texture2D" uid="uid://bkgux572mvwgd" path="res://objetos/mano animada uwu.png" id="17_uv465"]
+[ext_resource type="Texture2D" uid="uid://brj6t174csbym" path="res://Carpeta con las animaciones/erizo1.png" id="18_h1qlt"]
+[ext_resource type="Texture2D" uid="uid://c6pyearmvv36l" path="res://Carpeta con las animaciones/erizo2.png" id="19_sskgu"]
+[ext_resource type="Texture2D" uid="uid://drd6xx6m32e0f" path="res://objetos/estrella2.png" id="20_wm4wg"]
+[ext_resource type="Texture2D" uid="uid://bl1o1rf28j1bu" path="res://objetos/estrella3.png" id="21_34a5f"]
+[ext_resource type="Texture2D" uid="uid://dx1v0fha6mq7v" path="res://objetos/marco.png" id="21_bv8vf"]
+[ext_resource type="AudioStream" uid="uid://di72iyivey1cq" path="res://musica2/Viento.mp3" id="22_0o631"]
+
+[sub_resource type="Theme" id="Theme_0w7no"]
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/colors/font_outline_color = Color(1, 1, 1, 1)
+Label/constants/outline_size = 11
+Label/font_sizes/font_size = 41
+Label/fonts/font = ExtResource("1_bo7gx")
+
+[sub_resource type="CurveXYZTexture" id="CurveXYZTexture_kndra"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_qgv4o"]
+emission_shape_offset = Vector3(1, 5, 8)
+emission_shape_scale = Vector3(4, 8, 7)
+emission_shape = 3
+emission_box_extents = Vector3(120, 0, 80)
+direction = Vector3(6, 0, 0)
+spread = 122.4
+directional_velocity_min = 87.4
+directional_velocity_max = 188.2
+directional_velocity_curve = SubResource("CurveXYZTexture_kndra")
+gravity = Vector3(0, 98, 0)
+turbulence_enabled = true
+turbulence_noise_strength = 1.75
+turbulence_noise_scale = 7.208
+turbulence_noise_speed_random = 0.43
+
+[sub_resource type="Animation" id="Animation_7kxsg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_l44rk"]
+resource_name = "animation_xd"
+length = 2.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.09211, 1.09211)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4aqcp"]
+_data = {
+"RESET": SubResource("Animation_7kxsg"),
+"animation_xd": SubResource("Animation_l44rk")
+}
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_na0lw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3mc5d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_1ayar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_wx2wc")
+}],
+"loop": true,
+"name": &"animacion",
+"speed": 3.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6hshr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_x3a0q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_uv465")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ytjel"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_p4hjn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_2lhdi")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n73y2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_h1qlt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_sskgu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s541j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_wm4wg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_34a5f")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_0w7no")
+script = ExtResource("1_il7p6")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(577, 325.5)
+scale = Vector2(1.15, 0.647)
+texture = ExtResource("3_c2h3f")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+position = Vector2(-61, -55)
+amount = 10
+process_material = SubResource("ParticleProcessMaterial_qgv4o")
+texture = ExtResource("4_xm8io")
+lifetime = 10.0
+trail_lifetime = 0.01
+
+[node name="GPUParticles2D2" type="GPUParticles2D" parent="."]
+position = Vector2(-98, 212)
+amount = 10
+process_material = SubResource("ParticleProcessMaterial_qgv4o")
+texture = ExtResource("5_3wdlt")
+lifetime = 10.0
+trail_lifetime = 0.01
+
+[node name="GPUParticles2D3" type="GPUParticles2D" parent="."]
+position = Vector2(-91, 234)
+amount = 10
+process_material = SubResource("ParticleProcessMaterial_qgv4o")
+texture = ExtResource("6_lxgup")
+lifetime = 10.0
+trail_lifetime = 0.01
+
+[node name="GPUParticles2D4" type="GPUParticles2D" parent="."]
+position = Vector2(-71, 191)
+amount = 7
+process_material = SubResource("ParticleProcessMaterial_qgv4o")
+texture = ExtResource("7_iyau7")
+lifetime = 10.0
+trail_lifetime = 0.01
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 6.0
+autostart = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_4aqcp")
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_p4uu3")
+volume_db = 2.4
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.137
+anchor_top = 0.14
+anchor_right = 0.892
+anchor_bottom = 0.88
+offset_left = -14.824
+offset_top = 3.28
+offset_right = -40.584
+offset_bottom = -9.24005
+pivot_offset = Vector2(384.201, 252.586)
+
+[node name="ColorRect" type="ColorRect" parent="TextureRect"]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 38.0
+offset_right = 805.0
+offset_bottom = 439.0
+pivot_offset = Vector2(387.7, 195.601)
+
+[node name="Label2" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 358.0
+offset_top = 154.0
+offset_right = 589.0
+offset_bottom = 249.0
+text = " Vocal
+ \" E e\""
+
+[node name="Label3" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 552.0
+offset_top = 290.0
+offset_right = 683.0
+offset_bottom = 336.0
+text = "\"Mesa\""
+
+[node name="Label4" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 164.0
+offset_top = 290.0
+offset_right = 295.0
+offset_bottom = 336.0
+text = "\"Mesa\""
+
+[node name="Label" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 281.0
+offset_top = 104.0
+offset_right = 714.0
+offset_bottom = 150.0
+text = "Felicitaciones"
+
+[node name="Button" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+offset_left = 511.0
+offset_top = 376.0
+offset_right = 1055.0
+offset_bottom = 792.0
+scale = Vector2(0.30502, 0.302766)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_na0lw")
+flat = true
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Button"]
+position = Vector2(226.214, 206.43)
+scale = Vector2(1.80972, 1.22207)
+sprite_frames = SubResource("SpriteFrames_3mc5d")
+animation = &"animacion"
+frame_progress = 0.0344389
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(642, 458)
+sprite_frames = SubResource("SpriteFrames_6hshr")
+
+[node name="MEsa2" type="Sprite2D" parent="."]
+position = Vector2(378, 315)
+scale = Vector2(0.216327, 0.281633)
+texture = ExtResource("13_s01ob")
+
+[node name="MEsa3" type="Sprite2D" parent="."]
+position = Vector2(760, 309)
+scale = Vector2(0.216327, 0.281633)
+texture = ExtResource("13_s01ob")
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("15_m7ld7")
+volume_db = 4.0
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(372, 495)
+scale = Vector2(0.422646, 0.323009)
+sprite_frames = SubResource("SpriteFrames_ytjel")
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(254, 478)
+scale = Vector2(0.652466, 0.517699)
+sprite_frames = SubResource("SpriteFrames_ytjel")
+
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(902, 509)
+scale = Vector2(0.605556, 0.516667)
+sprite_frames = SubResource("SpriteFrames_n73y2")
+
+[node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(822, 514)
+scale = Vector2(0.486111, 0.386111)
+sprite_frames = SubResource("SpriteFrames_n73y2")
+
+[node name="AnimatedSprite2D6" type="AnimatedSprite2D" parent="."]
+position = Vector2(235, 226)
+sprite_frames = SubResource("SpriteFrames_s541j")
+
+[node name="AnimatedSprite2D7" type="AnimatedSprite2D" parent="."]
+position = Vector2(876, 187)
+sprite_frames = SubResource("SpriteFrames_s541j")
+
+[node name="AnimatedSprite2D8" type="AnimatedSprite2D" parent="."]
+position = Vector2(433, 456.5)
+scale = Vector2(0.92, 0.93)
+sprite_frames = SubResource("SpriteFrames_s541j")
+
+[node name="AnimatedSprite2D9" type="AnimatedSprite2D" parent="."]
+position = Vector2(722, 484)
+sprite_frames = SubResource("SpriteFrames_s541j")
+
+[node name="Ambientacion" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("22_0o631")
+volume_db = 3.0
+autoplay = true
+
+[node name="Marco" type="Sprite2D" parent="."]
+position = Vector2(568.5, 337.5)
+scale = Vector2(2.78716, 2.74706)
+texture = ExtResource("21_bv8vf")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_pasarrr_pressed"]

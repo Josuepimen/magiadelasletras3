@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ba5832xws67h2"
+path="res://.godot/imported/1er OBJETO.mp3-6129dfbc36554a0dbd244dafffe80d35.mp3str"
+
+[deps]
+
+source_file="res://musica2/1er OBJETO.mp3"
+dest_files=["res://.godot/imported/1er OBJETO.mp3-6129dfbc36554a0dbd244dafffe80d35.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

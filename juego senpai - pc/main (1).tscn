@@ -1,0 +1,377 @@
+[gd_scene load_steps=44 format=3 uid="uid://csra7b8i0x5o6"]
+
+[ext_resource type="Texture2D" uid="uid://bg06jycwmfvq3" path="res://fondos/pixil-frame-0 (10).png" id="1_amupd"]
+[ext_resource type="Script" path="res://main.gd" id="1_qdehm"]
+[ext_resource type="Texture2D" uid="uid://cqjdl8e7asjvo" path="res://Carpeta con las animaciones/pixil-layer-Background (7).png" id="2_80o8m"]
+[ext_resource type="Texture2D" uid="uid://c0lgfjkt8ty5w" path="res://Carpeta con las animaciones/pixil-layer-Background (6).png" id="3_oijbg"]
+[ext_resource type="Texture2D" uid="uid://cqdti1f7letaj" path="res://Carpeta con las animaciones/pixil-layer-Background (5).png" id="4_c3p4i"]
+[ext_resource type="Script" path="res://aparecer.gd" id="4_kls5b"]
+[ext_resource type="Texture2D" uid="uid://bscmamrfeprv4" path="res://Carpeta con las animaciones/pixil-layer-Background (4).png" id="5_ps3in"]
+[ext_resource type="Script" path="res://niño 3.gd" id="5_qsmsi"]
+[ext_resource type="Texture2D" uid="uid://b6wc380rgewnd" path="res://Carpeta con las animaciones/pixil-layer-Background (1).png" id="6_qgdh7"]
+[ext_resource type="Texture2D" uid="uid://s71mr5judip8" path="res://Carpeta con las animaciones/pixil-layer-Background (2).png" id="7_2t2l2"]
+[ext_resource type="Script" path="res://niña1.gd" id="7_qg1om"]
+[ext_resource type="Texture2D" uid="uid://bxdowmxydqywv" path="res://Carpeta con las animaciones/x1d1.png" id="8_oe8xm"]
+[ext_resource type="Texture2D" uid="uid://jwjygq8nuchq" path="res://Carpeta con las animaciones/pixil-layer-Background (3).png" id="8_uk4cs"]
+[ext_resource type="Texture2D" uid="uid://bdu1djirc3vno" path="res://Carpeta con las animaciones/pixil-layer-Background.png" id="9_4sle0"]
+[ext_resource type="Texture2D" uid="uid://dxi7nindj86pw" path="res://objetos/Proyecto nuevo.png" id="9_b5571"]
+[ext_resource type="Texture2D" uid="uid://nic4x1bikec2" path="res://Carpeta con las animaciones/x2.png" id="9_pcu07"]
+[ext_resource type="Script" path="res://niño 1.gd" id="9_r61fa"]
+[ext_resource type="Texture2D" uid="uid://dx08upbo86vnm" path="res://Carpeta con las animaciones/pixil-frame-0.png" id="10_2ufgr"]
+[ext_resource type="Texture2D" uid="uid://dsfdlptfj7rpl" path="res://Carpeta con las animaciones/x3.png" id="10_un0se"]
+[ext_resource type="Texture2D" uid="uid://b23i56c84abi3" path="res://Carpeta con las animaciones/pixil-frame-1.png" id="11_lwm1e"]
+[ext_resource type="Texture2D" uid="uid://d0xkr8exf2qwt" path="res://Carpeta con las animaciones/pixil-frame-2.png" id="12_lciog"]
+[ext_resource type="Script" path="res://niño 4.gd" id="18_2mwji"]
+[ext_resource type="Texture2D" uid="uid://b47bgff3mesc8" path="res://Carpeta con las animaciones/xd1.png" id="19_124g1"]
+[ext_resource type="Script" path="res://Label.gd" id="19_y51en"]
+[ext_resource type="Texture2D" uid="uid://qdxgruiwkruk" path="res://Carpeta con las animaciones/xd2.png" id="20_y65rg"]
+[ext_resource type="Texture2D" uid="uid://vsxweaerfj7g" path="res://Carpeta con las animaciones/xdd.png" id="21_hhs2s"]
+[ext_resource type="Texture2D" uid="uid://ei3787ibub3j" path="res://Carpeta con las animaciones/r.png" id="25_juufn"]
+[ext_resource type="Texture2D" uid="uid://beeh0vuyt8mca" path="res://Carpeta con las animaciones/vd.png" id="26_rhxuk"]
+[ext_resource type="Texture2D" uid="uid://cllc80b7i5svk" path="res://Carpeta con las animaciones/fs.png" id="27_me2gt"]
+[ext_resource type="Texture2D" uid="uid://di1blqmvwnayf" path="res://Carpeta con las animaciones/nk.png" id="28_k1jmh"]
+[ext_resource type="Texture2D" uid="uid://cthqusbk1lpnd" path="res://objetos/pixil-frame-0 (11).png" id="31_jp5wi"]
+[ext_resource type="Texture2D" uid="uid://dlc4v0luq60rc" path="res://objetos/pera formato 1.png" id="32_ti24l"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ws8iq"]
+animations = [{
+"frames": [{
+"duration": 0.11,
+"texture": ExtResource("2_80o8m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_oijbg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ps3in")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_c3p4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ps3in")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_oijbg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_c3p4i")
+}],
+"loop": true,
+"name": &"sol",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bis1k"]
+radius = 40.6079
+
+[sub_resource type="Curve2D" id="Curve2D_fu8jh"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 154, 481, 0, 0, 0, 0, 540, 495, 0, 0, 0, 0, 597, 417)
+}
+point_count = 3
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lxmpu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_oe8xm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_pcu07")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_un0se")
+}],
+"loop": true,
+"name": &"caminando",
+"speed": 5.0
+}]
+
+[sub_resource type="Curve2D" id="Curve2D_uwsfe"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 907, 498, 0, 0, 0, 0, 622, 502, 0, 0, 0, 0, 594, 437)
+}
+point_count = 3
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_npurd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_2ufgr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_lwm1e")
+}, {
+"duration": 0.3,
+"texture": ExtResource("12_lciog")
+}],
+"loop": true,
+"name": &"CAMINAR",
+"speed": 5.0
+}]
+
+[sub_resource type="Curve2D" id="Curve2D_km245"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 46, 507, 0, 0, 0, 0, 560, 504, 0, 0, 0, 0, 598, 443)
+}
+point_count = 3
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7rxo8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_qgdh7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_2t2l2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_uk4cs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_4sle0")
+}],
+"loop": true,
+"name": &"caminando_xd",
+"speed": 5.0
+}]
+
+[sub_resource type="Curve2D" id="Curve2D_6s8er"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -40, 510, 0, 0, 0, 0, 305, 501, 0, 0, 0, 0, 520, 504, 0, 0, 0, 0, 585, 451)
+}
+point_count = 4
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g4ta5"]
+animations = [{
+"frames": [{
+"duration": 0.3,
+"texture": ExtResource("19_124g1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_y65rg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_hhs2s")
+}],
+"loop": true,
+"name": &"caminito",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dvr6g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_juufn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_rhxuk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_me2gt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_k1jmh")
+}],
+"loop": true,
+"name": &"quieto",
+"speed": 5.0
+}]
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_qdehm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(572.5, 324.5)
+scale = Vector2(1.147, 1.14565)
+texture = ExtResource("1_amupd")
+
+[node name="sol" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(370, 49)
+scale = Vector2(2.0625, 1.40937)
+sprite_frames = SubResource("SpriteFrames_ws8iq")
+animation = &"sol"
+frame_progress = 0.63887
+flip_h = true
+
+[node name="Area2D" type="Area2D" parent="." groups=["objetos_invisibles"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(588, 393)
+shape = SubResource("CircleShape2D_bis1k")
+
+[node name="niña1" type="Node2D" parent="."]
+script = ExtResource("7_qg1om")
+
+[node name="Path2D" type="Path2D" parent="niña1"]
+position = Vector2(17, 2.5)
+curve = SubResource("Curve2D_fu8jh")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="niña1/Path2D"]
+position = Vector2(154, 481)
+rotation = 0.0362535
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="niña1/Path2D/PathFollow2D"]
+position = Vector2(-37.0818, -29.1751)
+rotation = -0.0226224
+scale = Vector2(0.615327, 0.574243)
+sprite_frames = SubResource("SpriteFrames_lxmpu")
+animation = &"caminando"
+flip_h = true
+
+[node name="Timer" type="Timer" parent="niña1"]
+wait_time = 3.81
+one_shot = true
+autostart = true
+
+[node name="niño 1" type="Node2D" parent="."]
+script = ExtResource("9_r61fa")
+
+[node name="Timer" type="Timer" parent="niño 1"]
+wait_time = 3.341
+one_shot = true
+autostart = true
+
+[node name="Path2D" type="Path2D" parent="niño 1"]
+curve = SubResource("Curve2D_uwsfe")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="niño 1/Path2D"]
+position = Vector2(907, 498)
+rotation = 3.12756
+rotates = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="niño 1/Path2D/PathFollow2D"]
+position = Vector2(-19.8503, 31.5889)
+rotation = -3.12443
+scale = Vector2(0.685766, 0.554933)
+sprite_frames = SubResource("SpriteFrames_npurd")
+animation = &"CAMINAR"
+frame_progress = 0.153579
+flip_h = true
+
+[node name="niño 3" type="Node2D" parent="."]
+script = ExtResource("5_qsmsi")
+
+[node name="Timer" type="Timer" parent="niño 3"]
+wait_time = 5.648
+one_shot = true
+autostart = true
+
+[node name="Path2D" type="Path2D" parent="niño 3"]
+curve = SubResource("Curve2D_km245")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="niño 3/Path2D"]
+position = Vector2(46, 507)
+rotation = -0.00583651
+rotates = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="niño 3/Path2D/PathFollow2D"]
+texture_filter = 1
+position = Vector2(-25.2836, -37.1482)
+rotation = -0.0165742
+scale = Vector2(0.324852, 0.293052)
+sprite_frames = SubResource("SpriteFrames_7rxo8")
+animation = &"caminando_xd"
+frame_progress = 0.20478
+flip_h = true
+
+[node name="niño 4" type="Node2D" parent="."]
+script = ExtResource("18_2mwji")
+
+[node name="Timer" type="Timer" parent="niño 4"]
+wait_time = 5.9
+one_shot = true
+autostart = true
+
+[node name="Path2D" type="Path2D" parent="niño 4"]
+curve = SubResource("Curve2D_6s8er")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="niño 4/Path2D"]
+position = Vector2(-40, 510)
+rotation = -0.026081
+rotates = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="niño 4/Path2D/PathFollow2D"]
+position = Vector2(-28.7033, -11.7525)
+rotation = 0.0433162
+scale = Vector2(0.574078, 0.60096)
+sprite_frames = SubResource("SpriteFrames_g4ta5")
+animation = &"caminito"
+flip_h = true
+
+[node name="niño de boton play" type="Node2D" parent="."]
+script = ExtResource("4_kls5b")
+
+[node name="Aparecer2" type="Timer" parent="niño de boton play"]
+wait_time = 6.189
+one_shot = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="niño de boton play"]
+position = Vector2(591, 391)
+scale = Vector2(0.621667, 0.465)
+sprite_frames = SubResource("SpriteFrames_dvr6g")
+animation = &"quieto"
+frame_progress = 0.206878
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 6
+position = Vector2(546, 108)
+scale = Vector2(3.455, 1.83937)
+texture = ExtResource("9_b5571")
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_left = 213.0
+offset_top = 93.0
+offset_right = 911.0
+offset_bottom = 235.0
+theme_override_colors/font_color = Color(0.027451, 1, 0.909804, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 1, 1)
+theme_override_font_sizes/font_size = 67
+text = "La magia de las letras"
+script = ExtResource("19_y51en")
+
+[node name="Timer" type="Timer" parent="Label"]
+wait_time = 6.189
+one_shot = true
+
+[node name="manzana" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(60, 235)
+texture = ExtResource("31_jp5wi")
+
+[node name="manzana2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(212, 228)
+texture = ExtResource("31_jp5wi")
+
+[node name="manzana3" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(168, 159)
+texture = ExtResource("31_jp5wi")
+
+[node name="pera" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1099, 224)
+texture = ExtResource("32_ti24l")
+
+[node name="pera2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(940, 159)
+texture = ExtResource("32_ti24l")
+
+[node name="pera3" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1072, 111)
+texture = ExtResource("32_ti24l")
+
+[connection signal="timeout" from="niña1/Timer" to="niña1" method="_on_timer_timeout"]
+[connection signal="timeout" from="niño 1/Timer" to="niño 1" method="_on_timer_timeout"]
+[connection signal="timeout" from="niño 3/Timer" to="niño 3" method="_on_timer_timeout"]
+[connection signal="timeout" from="niño 4/Timer" to="niño 4" method="_on_timer_timeout"]
+[connection signal="timeout" from="niño de boton play/Aparecer2" to="niño de boton play" method="_on_timer_timeout"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bltdg203op228"
+path="res://.godot/imported/sonido presionar.mp3-3613f9243b1bf32ebd93a75edf5a5965.mp3str"
+
+[deps]
+
+source_file="res://musica2/sonido presionar.mp3"
+dest_files=["res://.godot/imported/sonido presionar.mp3-3613f9243b1bf32ebd93a75edf5a5965.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

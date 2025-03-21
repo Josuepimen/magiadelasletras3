@@ -1,0 +1,321 @@
+[gd_scene load_steps=31 format=3 uid="uid://d20r3tnwo5km2"]
+
+[ext_resource type="FontFile" uid="uid://c73rv4ejrg5bm" path="res://objetos/Cute Dino.ttf" id="1_e2rdk"]
+[ext_resource type="Script" path="res://win4.gd" id="1_xtrjf"]
+[ext_resource type="Texture2D" uid="uid://b11g3b5v5m5d2" path="res://fondos/fondocielo2.png" id="3_y6fiw"]
+[ext_resource type="Texture2D" uid="uid://c3v7kyh4ocsm0" path="res://Carpeta con las animaciones/globo4.png" id="4_b8n2t"]
+[ext_resource type="Texture2D" uid="uid://txfdieoue6c" path="res://Carpeta con las animaciones/globoazul.png" id="5_kqtaq"]
+[ext_resource type="Texture2D" uid="uid://dx1v0fha6mq7v" path="res://objetos/marco.png" id="5_q1fqy"]
+[ext_resource type="Texture2D" uid="uid://dhp5wwsqsh153" path="res://Carpeta con las animaciones/globorojo.png" id="6_j53vh"]
+[ext_resource type="Texture2D" uid="uid://mghe4bixxmw8" path="res://Carpeta con las animaciones/globo blanco.png" id="7_q8a55"]
+[ext_resource type="AudioStream" uid="uid://c75atwgujec2q" path="res://musica2/O OSO FELICITACIONES.mp3" id="8_dc1xt"]
+[ext_resource type="Texture2D" uid="uid://cbuvomll6dlh3" path="res://objetos/Mochilaa.png" id="10_c43hc"]
+[ext_resource type="Texture2D" uid="uid://c3gem8j3jtogo" path="res://objetos/mochilaaaayanomecabienestamonda.png" id="11_xamsb"]
+[ext_resource type="Texture2D" uid="uid://xgia3a20vnft" path="res://objetos/clickmanitoowo.png" id="13_2xaqr"]
+[ext_resource type="AudioStream" uid="uid://ckehea8b7mgi8" path="res://musica2/brass-fanfare-with-timpani-and-winchimes-reverberated-146260.mp3" id="14_8ycwh"]
+[ext_resource type="Texture2D" uid="uid://bkgux572mvwgd" path="res://objetos/mano animada uwu.png" id="14_elw3j"]
+[ext_resource type="Texture2D" uid="uid://btecn3mii5305" path="res://objetos/oso.png" id="15_1bsy0"]
+[ext_resource type="Texture2D" uid="uid://cwd4hpl7k1era" path="res://Carpeta con las animaciones/ovejita1.png" id="15_qc1bi"]
+[ext_resource type="Texture2D" uid="uid://ca7e6inr3k44j" path="res://Carpeta con las animaciones/ovejita2.png" id="16_17ajf"]
+[ext_resource type="Texture2D" uid="uid://cc0fflonwk8f4" path="res://Carpeta con las animaciones/osito.png" id="18_xtfh7"]
+[ext_resource type="AudioStream" uid="uid://di72iyivey1cq" path="res://musica2/Viento.mp3" id="19_8b7ah"]
+
+[sub_resource type="Theme" id="Theme_h5s4f"]
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/colors/font_outline_color = Color(1, 1, 1, 1)
+Label/constants/outline_size = 11
+Label/font_sizes/font_size = 43
+Label/fonts/font = ExtResource("1_e2rdk")
+
+[sub_resource type="CurveXYZTexture" id="CurveXYZTexture_x6y1l"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_40htp"]
+emission_shape_offset = Vector3(1, 5, 8)
+emission_shape_scale = Vector3(4, 8, 7)
+emission_shape = 3
+emission_box_extents = Vector3(120, 0, 80)
+direction = Vector3(6, 0, 0)
+spread = 122.4
+directional_velocity_min = 87.4
+directional_velocity_max = 188.2
+directional_velocity_curve = SubResource("CurveXYZTexture_x6y1l")
+gravity = Vector3(0, 98, 0)
+turbulence_enabled = true
+turbulence_noise_strength = 1.75
+turbulence_noise_scale = 7.208
+turbulence_noise_speed_random = 0.43
+
+[sub_resource type="Animation" id="Animation_mh7g3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_u2m6n"]
+resource_name = "estoicismo"
+length = 2.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.11, 1.11)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pxgv6"]
+_data = {
+"RESET": SubResource("Animation_mh7g3"),
+"estoicismo": SubResource("Animation_u2m6n")
+}
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qv2bg"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uld8g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_c43hc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_xamsb")
+}],
+"loop": true,
+"name": &"animacion",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l7xti"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_2xaqr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_elw3j")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dyb3t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_qc1bi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_17ajf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qdkvu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_1bsy0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_xtfh7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_h5s4f")
+script = ExtResource("1_xtrjf")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(576, 323)
+scale = Vector2(1.168, 0.656)
+texture = ExtResource("3_y6fiw")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+position = Vector2(-61, -55)
+amount = 10
+process_material = SubResource("ParticleProcessMaterial_40htp")
+texture = ExtResource("4_b8n2t")
+lifetime = 10.0
+trail_lifetime = 0.01
+
+[node name="GPUParticles2D2" type="GPUParticles2D" parent="."]
+position = Vector2(-98, 212)
+amount = 10
+process_material = SubResource("ParticleProcessMaterial_40htp")
+texture = ExtResource("5_kqtaq")
+lifetime = 10.0
+trail_lifetime = 0.01
+
+[node name="GPUParticles2D3" type="GPUParticles2D" parent="."]
+position = Vector2(-91, 234)
+amount = 10
+process_material = SubResource("ParticleProcessMaterial_40htp")
+texture = ExtResource("6_j53vh")
+lifetime = 10.0
+trail_lifetime = 0.01
+
+[node name="GPUParticles2D4" type="GPUParticles2D" parent="."]
+position = Vector2(-71, 191)
+amount = 7
+process_material = SubResource("ParticleProcessMaterial_40htp")
+texture = ExtResource("7_q8a55")
+lifetime = 10.0
+trail_lifetime = 0.01
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 6.0
+autostart = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_pxgv6")
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_dc1xt")
+volume_db = 12.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 163.0
+offset_top = 106.0
+offset_right = 988.0
+offset_bottom = 550.0
+pivot_offset = Vector2(391.377, 218.443)
+texture = ExtResource("5_q1fqy")
+
+[node name="ColorRect" type="ColorRect" parent="TextureRect"]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 38.0
+offset_right = 793.0
+offset_bottom = 410.0
+
+[node name="Label2" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 336.0
+offset_top = 146.0
+offset_right = 508.0
+offset_bottom = 241.0
+text = "Vocal 
+ \"O o\""
+
+[node name="Label3" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 221.0
+offset_right = 190.0
+offset_bottom = 269.0
+text = "\"Oso\""
+
+[node name="Label4" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 594.0
+offset_top = 224.0
+offset_right = 701.0
+offset_bottom = 272.0
+text = "\"Oso\""
+
+[node name="Label" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 252.0
+offset_top = 80.0
+offset_right = 685.001
+offset_bottom = 126.0
+text = "Felicitaciones"
+
+[node name="Button" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+offset_left = 494.0
+offset_top = 355.0
+offset_right = 1045.0
+offset_bottom = 794.0
+scale = Vector2(0.30502, 0.302766)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qv2bg")
+flat = true
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Button"]
+position = Vector2(255.721, 255.973)
+scale = Vector2(2.15068, 1.40703)
+sprite_frames = SubResource("SpriteFrames_uld8g")
+animation = &"animacion"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(639, 457)
+sprite_frames = SubResource("SpriteFrames_l7xti")
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_8ycwh")
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(311, 432.75)
+scale = Vector2(0.356322, 0.265974)
+sprite_frames = SubResource("SpriteFrames_dyb3t")
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="."]
+position = Vector2(838, 433)
+scale = Vector2(0.356322, 0.265974)
+sprite_frames = SubResource("SpriteFrames_dyb3t")
+flip_h = true
+
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="."]
+position = Vector2(306, 240)
+scale = Vector2(0.314696, 0.325879)
+sprite_frames = SubResource("SpriteFrames_qdkvu")
+frame_progress = 0.717943
+
+[node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="."]
+position = Vector2(811, 241)
+scale = Vector2(0.314696, 0.325879)
+sprite_frames = SubResource("SpriteFrames_qdkvu")
+frame_progress = 0.16639
+
+[node name="Ambientacion" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("19_8b7ah")
+autoplay = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 385.0
+offset_top = 445.0
+offset_right = 426.0
+offset_bottom = 515.0
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 726.0
+offset_top = 445.0
+offset_right = 767.0
+offset_bottom = 515.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

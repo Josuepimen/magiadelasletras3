@@ -1,0 +1,621 @@
+[gd_scene load_steps=62 format=3 uid="uid://csra7b8i0x5o6"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_qdehm"]
+[ext_resource type="Texture2D" uid="uid://dxofiu2fpar60" path="res://fondos/fondo correcto ya por favor.png" id="2_fcpj6"]
+[ext_resource type="Script" path="res://niño 3.gd" id="5_qsmsi"]
+[ext_resource type="Texture2D" uid="uid://b6wc380rgewnd" path="res://Carpeta con las animaciones/pixil-layer-Background (1).png" id="6_qgdh7"]
+[ext_resource type="Texture2D" uid="uid://d0rsa8v4ow5dy" path="res://Carpeta con las animaciones/niñadefinitiva.png" id="6_w50cj"]
+[ext_resource type="Texture2D" uid="uid://s71mr5judip8" path="res://Carpeta con las animaciones/pixil-layer-Background (2).png" id="7_2t2l2"]
+[ext_resource type="Texture2D" uid="uid://dqx1i6u5tkrfm" path="res://Carpeta con las animaciones/niñadefionitiva1.png" id="7_3l34i"]
+[ext_resource type="Texture2D" uid="uid://tseksrg12ovk" path="res://objetos/hojaarboll.png" id="7_mr4sl"]
+[ext_resource type="Script" path="res://niña1.gd" id="7_qg1om"]
+[ext_resource type="Texture2D" uid="uid://dxm1oidxlqo84" path="res://objetos/Letra iniciounu.png" id="7_wgkvo"]
+[ext_resource type="Script" path="res://escenas/GPUParticles2D.gd" id="8_tc0bx"]
+[ext_resource type="Texture2D" uid="uid://jwjygq8nuchq" path="res://Carpeta con las animaciones/pixil-layer-Background (3).png" id="8_uk4cs"]
+[ext_resource type="Texture2D" uid="uid://bdu1djirc3vno" path="res://Carpeta con las animaciones/pixil-layer-Background.png" id="9_4sle0"]
+[ext_resource type="Script" path="res://niño 1.gd" id="9_r61fa"]
+[ext_resource type="Texture2D" uid="uid://dx08upbo86vnm" path="res://Carpeta con las animaciones/pixil-frame-0.png" id="10_2ufgr"]
+[ext_resource type="Texture2D" uid="uid://c62j13qoyimdc" path="res://Carpeta con las animaciones/mamaacargando.png" id="10_muh1l"]
+[ext_resource type="Texture2D" uid="uid://b23i56c84abi3" path="res://Carpeta con las animaciones/pixil-frame-1.png" id="11_lwm1e"]
+[ext_resource type="Texture2D" uid="uid://kbarlh53ghdr" path="res://Carpeta con las animaciones/mamacargando.png" id="11_qwlpk"]
+[ext_resource type="Texture2D" uid="uid://d0xkr8exf2qwt" path="res://Carpeta con las animaciones/pixil-frame-2.png" id="12_lciog"]
+[ext_resource type="Texture2D" uid="uid://dad1f2yir41b8" path="res://Carpeta con las animaciones/mamacargandooo.png" id="12_m7ohb"]
+[ext_resource type="Script" path="res://niño 4.gd" id="18_2mwji"]
+[ext_resource type="Texture2D" uid="uid://b47bgff3mesc8" path="res://Carpeta con las animaciones/xd1.png" id="19_124g1"]
+[ext_resource type="Script" path="res://Label.gd" id="19_y51en"]
+[ext_resource type="Texture2D" uid="uid://qdxgruiwkruk" path="res://Carpeta con las animaciones/xd2.png" id="20_y65rg"]
+[ext_resource type="Texture2D" uid="uid://vsxweaerfj7g" path="res://Carpeta con las animaciones/xdd.png" id="21_hhs2s"]
+[ext_resource type="Texture2D" uid="uid://c2h4o48awtg35" path="res://Carpeta con las animaciones/mami.png" id="22_ywbqo"]
+[ext_resource type="Texture2D" uid="uid://d0y780xmwvq4k" path="res://Carpeta con las animaciones/mamii.png" id="23_y3i5s"]
+[ext_resource type="Texture2D" uid="uid://37spjhsnp3wq" path="res://Carpeta con las animaciones/mamiiii.png" id="24_tmins"]
+[ext_resource type="Texture2D" uid="uid://cdhp6f65rjc56" path="res://Carpeta con las animaciones/mamiii.png" id="25_a0xb4"]
+[ext_resource type="Texture2D" uid="uid://bwdqk4x6yyhds" path="res://Carpeta con las animaciones/nyger.png" id="26_e4erq"]
+[ext_resource type="Texture2D" uid="uid://bd6xh83l2fk5a" path="res://Carpeta con las animaciones/nynynyger.png" id="27_xj8dk"]
+[ext_resource type="Texture2D" uid="uid://chfkaa2dx8hor" path="res://Carpeta con las animaciones/nyggerr.png" id="28_cnast"]
+[ext_resource type="Texture2D" uid="uid://cognetvrayku8" path="res://Carpeta con las animaciones/mamamama.png" id="29_0flrg"]
+[ext_resource type="Texture2D" uid="uid://deginx4gv3rre" path="res://Carpeta con las animaciones/mamamammaa.png" id="30_5i817"]
+[ext_resource type="FontFile" uid="uid://c2cmx2dw3f5f" path="res://objetos/04B_30__.TTF" id="30_x0tih"]
+[ext_resource type="Texture2D" uid="uid://cn242ft485x12" path="res://Carpeta con las animaciones/mamamamama.png" id="31_dbhky"]
+[ext_resource type="Texture2D" uid="uid://b1ew3iq4w8u5m" path="res://objetos/pixil-frame-0 (11).png" id="31_jp5wi"]
+[ext_resource type="Texture2D" uid="uid://b1meepvr1bkpd" path="res://objetos/mango.png" id="32_fis3r"]
+[ext_resource type="AudioStream" uid="uid://ky4efy4lbfrm" path="res://musica2/BIENVENIDA MAGIA DE LAS LETRAS.mp3" id="39_iidij"]
+
+[sub_resource type="Curve" id="Curve_olqmg"]
+min_value = -360.0
+max_value = 360.0
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_qict1"]
+texture_mode = 1
+curve = SubResource("Curve_olqmg")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_51d1u"]
+particle_flag_rotate_y = true
+emission_shape_offset = Vector3(50, 6, 2)
+emission_shape_scale = Vector3(1, 7, 1)
+emission_shape = 3
+emission_box_extents = Vector3(70, 1, 1)
+angle_min = -201.6
+angle_max = -155.5
+angle_curve = SubResource("CurveTexture_qict1")
+angular_velocity_min = -115.2
+angular_velocity_max = 172.8
+gravity = Vector3(0, 98, 0)
+scale_min = 0.1
+scale_max = 0.2
+anim_offset_max = 0.39
+turbulence_enabled = true
+
+[sub_resource type="Curve2D" id="Curve2D_fu8jh"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 154, 481, 0, 0, 0, 0, 540, 495, 0, 0, 0, 0, 597, 417)
+}
+point_count = 3
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lxmpu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_w50cj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_3l34i")
+}],
+"loop": true,
+"name": &"caminando",
+"speed": 5.0
+}]
+
+[sub_resource type="Curve2D" id="Curve2D_su2tf"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 13, 510, 0, 0, 0, 0, 358, 500, 0, 0, 0, 0, 537, 498, 0, 0, 0, 0, 574, 477)
+}
+point_count = 4
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2onoe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_muh1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_qwlpk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_m7ohb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Curve2D" id="Curve2D_uwsfe"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 907, 498, 0, 0, 0, 0, 622, 502, 0, 0, 0, 0, 594, 437)
+}
+point_count = 3
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_npurd"]
+animations = [{
+"frames": [{
+"duration": 0.8,
+"texture": ExtResource("10_2ufgr")
+}, {
+"duration": 0.8,
+"texture": ExtResource("11_lwm1e")
+}, {
+"duration": 0.8,
+"texture": ExtResource("12_lciog")
+}],
+"loop": true,
+"name": &"CAMINAR",
+"speed": 5.0
+}]
+
+[sub_resource type="Curve2D" id="Curve2D_km245"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 46, 507, 0, 0, 0, 0, 560, 504, 0, 0, 0, 0, 598, 443)
+}
+point_count = 3
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7rxo8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_qgdh7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_2t2l2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_uk4cs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_4sle0")
+}],
+"loop": true,
+"name": &"caminando_xd",
+"speed": 5.0
+}]
+
+[sub_resource type="Curve2D" id="Curve2D_6s8er"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -40, 510, 0, 0, 0, 0, 305, 501, 0, 0, 0, 0, 520, 504, 0, 0, 0, 0, 585, 451)
+}
+point_count = 4
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g4ta5"]
+animations = [{
+"frames": [{
+"duration": 0.3,
+"texture": ExtResource("19_124g1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_y65rg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_hhs2s")
+}],
+"loop": true,
+"name": &"caminito",
+"speed": 5.0
+}]
+
+[sub_resource type="Curve2D" id="Curve2D_l7in7"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -30, 511, 0, 0, 0, 0, 512, 503, 0, 0, 0, 0, 590, 455)
+}
+point_count = 3
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_corwj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_ywbqo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_y3i5s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_tmins")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_a0xb4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Curve2D" id="Curve2D_qt0px"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 950, 503, 0, 0, 0, 0, 619, 503, 0, 0, 0, 0, 583, 439)
+}
+point_count = 3
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7tja5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_e4erq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_xj8dk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_cnast")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Curve2D" id="Curve2D_al0ol"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 133, 495, 0, 0, 0, 0, 294, 493, 0, 0, 0, 0, 471, 492, 0, 0, 0, 0, 582, 486, 0, 0, 0, 0, 592, 450)
+}
+point_count = 5
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jqkrl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("29_0flrg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_5i817")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_dbhky")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_p1kv4"]
+font = ExtResource("30_x0tih")
+font_size = 48
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_ea07g"]
+resource_name = "Letrasmovida"
+length = 2.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gnrua"]
+_data = {
+"Letrasmovida": SubResource("Animation_ea07g")
+}
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_qdehm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(579.5, 326)
+scale = Vector2(1.161, 1.15098)
+texture = ExtResource("2_fcpj6")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+position = Vector2(132, 193)
+rotation = -0.0261799
+skew = -0.352556
+amount = 4
+process_material = SubResource("ParticleProcessMaterial_51d1u")
+texture = ExtResource("7_mr4sl")
+lifetime = 4.0
+speed_scale = 1.66
+trail_lifetime = 7.0
+script = ExtResource("8_tc0bx")
+
+[node name="GPUParticles2D2" type="GPUParticles2D" parent="."]
+position = Vector2(1024, 167)
+amount = 3
+process_material = SubResource("ParticleProcessMaterial_51d1u")
+texture = ExtResource("7_mr4sl")
+lifetime = 4.0
+speed_scale = 1.66
+trail_lifetime = 7.0
+
+[node name="niña1" type="Node2D" parent="."]
+script = ExtResource("7_qg1om")
+
+[node name="Path2D" type="Path2D" parent="niña1"]
+position = Vector2(17, 2.5)
+curve = SubResource("Curve2D_fu8jh")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="niña1/Path2D"]
+position = Vector2(154, 481)
+rotation = 0.0362535
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="niña1/Path2D/PathFollow2D"]
+position = Vector2(-37.0818, -29.1751)
+rotation = -0.0226224
+scale = Vector2(0.615327, 0.574243)
+sprite_frames = SubResource("SpriteFrames_lxmpu")
+animation = &"caminando"
+frame_progress = 0.796135
+flip_h = true
+
+[node name="Timer" type="Timer" parent="niña1"]
+wait_time = 3.81
+one_shot = true
+autostart = true
+
+[node name="niño 8" type="Node2D" parent="."]
+position = Vector2(0, 3.05176e-05)
+script = ExtResource("18_2mwji")
+
+[node name="Timer" type="Timer" parent="niño 8"]
+wait_time = 6.3
+one_shot = true
+autostart = true
+
+[node name="Path2D" type="Path2D" parent="niño 8"]
+curve = SubResource("Curve2D_su2tf")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="niño 8/Path2D"]
+position = Vector2(13, 510)
+rotation = -0.0289774
+rotates = false
+loop = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="niño 8/Path2D/PathFollow2D"]
+position = Vector2(-27.9158, -37.8247)
+scale = Vector2(0.354, 0.34359)
+sprite_frames = SubResource("SpriteFrames_2onoe")
+flip_h = true
+
+[node name="niño 1" type="Node2D" parent="."]
+script = ExtResource("9_r61fa")
+
+[node name="Timer" type="Timer" parent="niño 1"]
+wait_time = 3.341
+one_shot = true
+autostart = true
+
+[node name="Path2D" type="Path2D" parent="niño 1"]
+curve = SubResource("Curve2D_uwsfe")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="niño 1/Path2D"]
+position = Vector2(907, 498)
+rotation = 3.12756
+rotates = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="niño 1/Path2D/PathFollow2D"]
+position = Vector2(-19.8503, 31.5889)
+rotation = -3.12443
+scale = Vector2(0.685766, 0.554933)
+sprite_frames = SubResource("SpriteFrames_npurd")
+animation = &"CAMINAR"
+frame_progress = 0.70802
+flip_h = true
+
+[node name="niño 3" type="Node2D" parent="."]
+script = ExtResource("5_qsmsi")
+
+[node name="Timer" type="Timer" parent="niño 3"]
+wait_time = 5.648
+one_shot = true
+autostart = true
+
+[node name="Path2D" type="Path2D" parent="niño 3"]
+curve = SubResource("Curve2D_km245")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="niño 3/Path2D"]
+position = Vector2(46, 507)
+rotation = -0.00583651
+rotates = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="niño 3/Path2D/PathFollow2D"]
+texture_filter = 1
+position = Vector2(-25.2836, -37.1482)
+rotation = -0.0165742
+scale = Vector2(0.324852, 0.293052)
+sprite_frames = SubResource("SpriteFrames_7rxo8")
+animation = &"caminando_xd"
+frame_progress = 0.20478
+flip_h = true
+
+[node name="niño 4" type="Node2D" parent="."]
+script = ExtResource("18_2mwji")
+
+[node name="Timer" type="Timer" parent="niño 4"]
+wait_time = 5.9
+one_shot = true
+autostart = true
+
+[node name="Path2D" type="Path2D" parent="niño 4"]
+curve = SubResource("Curve2D_6s8er")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="niño 4/Path2D"]
+position = Vector2(-40, 510)
+rotation = -0.026081
+rotates = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="niño 4/Path2D/PathFollow2D"]
+position = Vector2(-33.4478, -2.05136)
+rotation = 0.0433162
+scale = Vector2(0.545279, 0.534977)
+sprite_frames = SubResource("SpriteFrames_g4ta5")
+animation = &"caminito"
+flip_h = true
+
+[node name="niño 5" type="Node2D" parent="."]
+script = ExtResource("18_2mwji")
+
+[node name="Timer" type="Timer" parent="niño 5"]
+wait_time = 5.9
+one_shot = true
+autostart = true
+
+[node name="Path2D" type="Path2D" parent="niño 5"]
+curve = SubResource("Curve2D_l7in7")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="niño 5/Path2D"]
+position = Vector2(-30, 511)
+rotates = false
+loop = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="niño 5/Path2D/PathFollow2D"]
+position = Vector2(-99.5, -27)
+scale = Vector2(0.865, 0.752)
+sprite_frames = SubResource("SpriteFrames_corwj")
+frame_progress = 0.811616
+flip_h = true
+
+[node name="niño 6" type="Node2D" parent="."]
+script = ExtResource("18_2mwji")
+
+[node name="Timer" type="Timer" parent="niño 6"]
+wait_time = 4.8
+one_shot = true
+autostart = true
+
+[node name="Path2D" type="Path2D" parent="niño 6"]
+curve = SubResource("Curve2D_qt0px")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="niño 6/Path2D"]
+position = Vector2(950, 503)
+rotates = false
+loop = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="niño 6/Path2D/PathFollow2D"]
+position = Vector2(22, -52)
+scale = Vector2(0.735, 0.708)
+sprite_frames = SubResource("SpriteFrames_7tja5")
+
+[node name="niño 7" type="Node2D" parent="."]
+script = ExtResource("18_2mwji")
+
+[node name="Timer" type="Timer" parent="niño 7"]
+wait_time = 3.99
+one_shot = true
+autostart = true
+
+[node name="Path2D" type="Path2D" parent="niño 7"]
+curve = SubResource("Curve2D_al0ol")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="niño 7/Path2D"]
+position = Vector2(133, 495)
+rotation = -0.0124217
+rotates = false
+loop = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="niño 7/Path2D/PathFollow2D"]
+position = Vector2(-26.4762, -42.3321)
+scale = Vector2(0.615, 0.5)
+sprite_frames = SubResource("SpriteFrames_jqkrl")
+
+[node name="manzana" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(62, 240)
+texture = ExtResource("31_jp5wi")
+
+[node name="manzana2" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(268, 243)
+texture = ExtResource("31_jp5wi")
+
+[node name="manzana3" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(155, 248)
+texture = ExtResource("31_jp5wi")
+
+[node name="pera" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(1011, 242)
+scale = Vector2(0.205263, 0.2)
+texture = ExtResource("32_fis3r")
+
+[node name="pera2" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(930, 128)
+scale = Vector2(0.226316, 0.2)
+texture = ExtResource("32_fis3r")
+
+[node name="pera3" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(1075, 239)
+scale = Vector2(0.257895, 0.228947)
+texture = ExtResource("32_fis3r")
+
+[node name="pera5" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(1118, 240)
+scale = Vector2(0.257895, 0.228947)
+texture = ExtResource("32_fis3r")
+
+[node name="pera6" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(1095, 90)
+scale = Vector2(0.257895, 0.228947)
+texture = ExtResource("32_fis3r")
+
+[node name="pera7" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(910, 162)
+scale = Vector2(0.257895, 0.228947)
+texture = ExtResource("32_fis3r")
+
+[node name="pera4" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(1053, 92)
+scale = Vector2(0.257895, 0.228947)
+texture = ExtResource("32_fis3r")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(595, 238)
+scale = Vector2(1.4225, 4.16)
+texture = ExtResource("7_wgkvo")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 138.0
+offset_top = 89.0
+offset_right = 999.0
+offset_bottom = 197.0
+pivot_offset = Vector2(363.94, 84.938)
+theme_override_colors/font_color = Color(0.027451, 1, 0.909804, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 1, 1)
+theme_override_font_sizes/font_size = 67
+text = "La magia de las letras"
+label_settings = SubResource("LabelSettings_p1kv4")
+script = ExtResource("19_y51en")
+
+[node name="Timer" type="Timer" parent="Label"]
+wait_time = 6.189
+one_shot = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+visible = false
+offset_right = 1148.0
+offset_bottom = 430.0
+
+[node name="AudioBienvenida" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("39_iidij")
+volume_db = 12.0
+attenuation = 0.0281641
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_gnrua")
+}
+
+[connection signal="timeout" from="niña1/Timer" to="niña1" method="_on_timer_timeout"]
+[connection signal="timeout" from="niño 8/Timer" to="niño 8" method="_on_timer_timeout"]
+[connection signal="timeout" from="niño 1/Timer" to="niño 1" method="_on_timer_timeout"]
+[connection signal="timeout" from="niño 3/Timer" to="niño 3" method="_on_timer_timeout"]
+[connection signal="timeout" from="niño 4/Timer" to="niño 4" method="_on_timer_timeout"]
+[connection signal="timeout" from="niño 5/Timer" to="niño 5" method="_on_timer_timeout"]
+[connection signal="timeout" from="niño 6/Timer" to="niño 6" method="_on_timer_timeout"]
+[connection signal="timeout" from="niño 7/Timer" to="niño 7" method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

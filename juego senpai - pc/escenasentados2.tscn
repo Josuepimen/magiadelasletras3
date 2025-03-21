@@ -1,0 +1,310 @@
+[gd_scene load_steps=37 format=3 uid="uid://cxrs7130o8y7t"]
+
+[ext_resource type="Script" path="res://escenasentados2.gd" id="1_ywdvp"]
+[ext_resource type="Texture2D" uid="uid://daiumigy65q3i" path="res://fondos/fondo sin mesas.png" id="2_f7su4"]
+[ext_resource type="Texture2D" path="res://objetos/silla.png" id="3_lcs2y"]
+[ext_resource type="Texture2D" uid="uid://cdnixe1sbspr3" path="res://Carpeta con las animaciones/maestrita.png" id="5_w6vig"]
+[ext_resource type="Texture2D" uid="uid://bpd7jgwnakjyp" path="res://Carpeta con las animaciones/maestraa.png" id="6_om3bl"]
+[ext_resource type="Texture2D" uid="uid://bo1h7b4lsticb" path="res://personajes/sentadita.png" id="11_3sg42"]
+[ext_resource type="Texture2D" uid="uid://bxdowmxydqywv" path="res://Carpeta con las animaciones/x1d1.png" id="12_txarb"]
+[ext_resource type="Texture2D" uid="uid://nic4x1bikec2" path="res://Carpeta con las animaciones/x2.png" id="13_niwm4"]
+[ext_resource type="Texture2D" uid="uid://dsfdlptfj7rpl" path="res://Carpeta con las animaciones/x3.png" id="14_w422q"]
+[ext_resource type="Texture2D" uid="uid://dbhssdeistfrd" path="res://personajes/niñosentadoaaaa.png" id="17_fvo7w"]
+[ext_resource type="Texture2D" uid="uid://dx08upbo86vnm" path="res://Carpeta con las animaciones/pixil-frame-0.png" id="18_nhj7q"]
+[ext_resource type="Texture2D" uid="uid://b23i56c84abi3" path="res://Carpeta con las animaciones/pixil-frame-1.png" id="19_q24nn"]
+[ext_resource type="Texture2D" uid="uid://d0xkr8exf2qwt" path="res://Carpeta con las animaciones/pixil-frame-2.png" id="20_ax6ud"]
+[ext_resource type="AudioStream" uid="uid://fmdpyyb7rdhj" path="res://musica/PRESIONA MESAS.mp3" id="22_21j8o"]
+[ext_resource type="Texture2D" uid="uid://b6wc380rgewnd" path="res://Carpeta con las animaciones/pixil-layer-Background (1).png" id="22_yho5e"]
+[ext_resource type="Texture2D" uid="uid://s71mr5judip8" path="res://Carpeta con las animaciones/pixil-layer-Background (2).png" id="23_y02cg"]
+[ext_resource type="Texture2D" uid="uid://jwjygq8nuchq" path="res://Carpeta con las animaciones/pixil-layer-Background (3).png" id="24_bhtew"]
+[ext_resource type="AudioStream" uid="uid://cx1apdox8fitu" path="res://musica2/MENU ARMAR Y CONSTRUIR .mp3" id="24_rrh3v"]
+[ext_resource type="AudioStream" uid="uid://k6efrlukcdsn" path="res://musica2/MENU EXPRESAR Y CREAR.mp3" id="25_cprir"]
+[ext_resource type="AudioStream" uid="uid://3xhvcq4c3nih" path="res://musica2/MENU REPRESENTAR E IMITAR .mp3" id="26_00l4r"]
+[ext_resource type="Texture2D" uid="uid://qdxgruiwkruk" path="res://Carpeta con las animaciones/xd2.png" id="26_mjbto"]
+[ext_resource type="Texture2D" uid="uid://o2u8b2y2jhgf" path="res://objetos/letras.png" id="27_13jig"]
+[ext_resource type="AudioStream" uid="uid://djsvj2dsl6ya" path="res://musica2/MENU EXPERIMENTAR Y DESCUBRIR .mp3" id="27_31efk"]
+[ext_resource type="Texture2D" uid="uid://b47bgff3mesc8" path="res://Carpeta con las animaciones/xd1.png" id="27_kaqk0"]
+[ext_resource type="Texture2D" uid="uid://vsxweaerfj7g" path="res://Carpeta con las animaciones/xdd.png" id="28_25gyn"]
+[ext_resource type="Texture2D" uid="uid://qa8p6rocwmyx" path="res://personajes/niñasentadaa.png" id="29_okua4"]
+[ext_resource type="Texture2D" uid="uid://86h6o277uw73" path="res://fondos/mesassas.png" id="31_vxdj8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_glpvw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_w6vig")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_om3bl")
+}],
+"loop": true,
+"name": &"movmiento",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_biwdg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_txarb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_niwm4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_w422q")
+}],
+"loop": true,
+"name": &"caminando",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_3sg42")
+}],
+"loop": true,
+"name": &"estatico",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rkrgl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_fvo7w")
+}],
+"loop": true,
+"name": &"stop1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_nhj7q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_q24nn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ax6ud")
+}],
+"loop": true,
+"name": &"walk1",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xw4yk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_yho5e")
+}],
+"loop": true,
+"name": &"stop2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_yho5e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_y02cg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_bhtew")
+}],
+"loop": true,
+"name": &"walk2",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q3hcl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_mjbto")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_kaqk0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_25gyn")
+}],
+"loop": true,
+"name": &"caminando",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("29_okua4")
+}],
+"loop": true,
+"name": &"quieto",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lehxh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4nwnj"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_geyrn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_scidm"]
+
+[node name="main2" type="Node2D"]
+script = ExtResource("1_ywdvp")
+metadata/_edit_vertical_guides_ = [-428.0, -208.0]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(575, 325)
+scale = Vector2(1.166, 1.09)
+texture = ExtResource("2_f7su4")
+
+[node name="Silla" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(220, 363)
+scale = Vector2(0.101375, 0.125833)
+texture = ExtResource("3_lcs2y")
+
+[node name="Node2D2" type="Node2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Node2D2"]
+position = Vector2(47.2426, 515.092)
+rotation = 0.01206
+scale = Vector2(0.804726, 0.750197)
+sprite_frames = SubResource("SpriteFrames_glpvw")
+animation = &"movmiento"
+
+[node name="Silla2" type="Sprite2D" parent="."]
+position = Vector2(498, 510)
+scale = Vector2(0.124843, 0.169792)
+texture = ExtResource("3_lcs2y")
+
+[node name="Silla4" type="Sprite2D" parent="."]
+position = Vector2(297, 480)
+scale = Vector2(0.129343, 0.162292)
+texture = ExtResource("3_lcs2y")
+
+[node name="Silla3" type="Sprite2D" parent="."]
+position = Vector2(737, 519)
+scale = Vector2(0.143344, 0.158125)
+texture = ExtResource("3_lcs2y")
+
+[node name="uwu" type="Node2D" parent="."]
+
+[node name="Timer" type="Timer" parent="uwu"]
+wait_time = 5.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="uwu"]
+position = Vector2(316.003, 470.248)
+rotation = 0.0207922
+scale = Vector2(0.94401, 0.944169)
+skew = -0.000223517
+sprite_frames = SubResource("SpriteFrames_biwdg")
+animation = &"estatico"
+
+[node name="uwu3" type="Node2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="uwu3"]
+position = Vector2(762, 499)
+rotation = -0.0210099
+scale = Vector2(0.889903, 0.697677)
+sprite_frames = SubResource("SpriteFrames_rkrgl")
+animation = &"stop1"
+flip_h = true
+
+[node name="Timer" type="Timer" parent="uwu3"]
+wait_time = 5.0
+
+[node name="uwu4" type="Node2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="uwu4"]
+position = Vector2(904, 466)
+rotation = 0.01709
+scale = Vector2(0.557567, 0.419042)
+sprite_frames = SubResource("SpriteFrames_xw4yk")
+animation = &"walk2"
+flip_h = true
+
+[node name="Timer" type="Timer" parent="uwu4"]
+wait_time = 5.0
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Node2D"]
+position = Vector2(521, 515)
+rotation = -0.00168992
+scale = Vector2(0.959978, 0.960113)
+sprite_frames = SubResource("SpriteFrames_q3hcl")
+animation = &"quieto"
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("22_21j8o")
+volume_db = 12.0
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="."]
+volume_db = 13.449
+attenuation = 0.0253829
+
+[node name="Button" type="Button" parent="."]
+offset_left = 60.0
+offset_top = 477.0
+offset_right = 271.0
+offset_bottom = 532.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_lehxh")
+flat = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Button"]
+stream = ExtResource("24_rrh3v")
+volume_db = 12.0
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 328.0
+offset_top = 535.0
+offset_right = 566.0
+offset_bottom = 587.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4nwnj")
+flat = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Button2"]
+stream = ExtResource("25_cprir")
+volume_db = 12.0
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 621.0
+offset_top = 539.0
+offset_right = 833.0
+offset_bottom = 590.0
+theme_override_styles/focus = SubResource("StyleBoxTexture_geyrn")
+flat = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Button3"]
+stream = ExtResource("26_00l4r")
+volume_db = 12.0
+
+[node name="Button4" type="Button" parent="."]
+offset_left = 872.0
+offset_top = 480.0
+offset_right = 1104.0
+offset_bottom = 564.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_scidm")
+flat = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Button4"]
+stream = ExtResource("27_31efk")
+volume_db = 12.0
+
+[node name="Mesassas" type="Sprite2D" parent="."]
+position = Vector2(614, 339)
+texture = ExtResource("31_vxdj8")
+
+[node name="Letras" type="Sprite2D" parent="."]
+position = Vector2(608, 335)
+texture = ExtResource("27_13jig")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]

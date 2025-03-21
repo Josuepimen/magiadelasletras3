@@ -1,0 +1,83 @@
+[gd_scene load_steps=11 format=3 uid="uid://c4x7r10hbrv3i"]
+
+[ext_resource type="Script" path="res://Creditoss.gd" id="1_00c7i"]
+[ext_resource type="Texture2D" uid="uid://deikmydyqt7en" path="res://fondos/Créditos.png" id="2_8pxas"]
+[ext_resource type="Texture2D" uid="uid://cbuvomll6dlh3" path="res://objetos/Mochilaa.png" id="3_bqnrx"]
+[ext_resource type="AudioStream" uid="uid://dnxdu8abv7tgy" path="res://musica2/CRÉDITOS.mp3" id="4_dg1em"]
+[ext_resource type="Texture2D" uid="uid://c3gem8j3jtogo" path="res://objetos/mochilaaaayanomecabienestamonda.png" id="4_jq5da"]
+[ext_resource type="Texture2D" uid="uid://xgia3a20vnft" path="res://objetos/clickmanitoowo.png" id="5_88mes"]
+[ext_resource type="Texture2D" uid="uid://bkgux572mvwgd" path="res://objetos/mano animada uwu.png" id="6_58l87"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kjrvw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l6t5e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_bqnrx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_jq5da")
+}],
+"loop": true,
+"name": &"animacion",
+"speed": 2.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cengj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_88mes")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_58l87")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_00c7i")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.011
+offset_right = 4.0
+offset_bottom = -0.128052
+texture = ExtResource("2_8pxas")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 498.0
+offset_right = 217.0
+offset_bottom = 620.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_kjrvw")
+flat = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Button"]
+position = Vector2(105.5, 80.5)
+scale = Vector2(0.438, 0.302)
+sprite_frames = SubResource("SpriteFrames_l6t5e")
+animation = &"animacion"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_dg1em")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(115, 604)
+sprite_frames = SubResource("SpriteFrames_cengj")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

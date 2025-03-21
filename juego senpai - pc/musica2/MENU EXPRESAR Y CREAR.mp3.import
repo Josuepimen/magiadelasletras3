@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://k6efrlukcdsn"
+path="res://.godot/imported/MENU EXPRESAR Y CREAR.mp3-9b00dbb4b1b5887d3281f94282be27ed.mp3str"
+
+[deps]
+
+source_file="res://musica2/MENU EXPRESAR Y CREAR.mp3"
+dest_files=["res://.godot/imported/MENU EXPRESAR Y CREAR.mp3-9b00dbb4b1b5887d3281f94282be27ed.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

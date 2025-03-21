@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bs6q6yfa7eeol"
+path="res://.godot/imported/Y2meta.app - WIND Sound effect Viento efecto de sonido Videos o Relax (320 kbps).mp3-06676d41b81959ca12fb281d9e776735.mp3str"
+
+[deps]
+
+source_file="res://musica2/Y2meta.app - WIND Sound effect Viento efecto de sonido Videos o Relax (320 kbps).mp3"
+dest_files=["res://.godot/imported/Y2meta.app - WIND Sound effect Viento efecto de sonido Videos o Relax (320 kbps).mp3-06676d41b81959ca12fb281d9e776735.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

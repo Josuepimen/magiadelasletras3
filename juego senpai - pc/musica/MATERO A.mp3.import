@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cixvkubo7f8hp"
+path="res://.godot/imported/MATERO A.mp3-dab3b266028d1968f4458317ad5e65c7.mp3str"
+
+[deps]
+
+source_file="res://musica/MATERO A.mp3"
+dest_files=["res://.godot/imported/MATERO A.mp3-dab3b266028d1968f4458317ad5e65c7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

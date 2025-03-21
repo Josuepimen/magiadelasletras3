@@ -1,0 +1,170 @@
+[gd_scene load_steps=23 format=3 uid="uid://ch4gb8f2sja3r"]
+
+[ext_resource type="Script" path="res://victoriaseleccionar1.gd" id="1_r6mcm"]
+[ext_resource type="Texture2D" uid="uid://c572u0n2tcscv" path="res://fondos/pixil-frame-0 (4).png" id="2_wml28"]
+[ext_resource type="Texture2D" uid="uid://cbuvomll6dlh3" path="res://objetos/Mochilaa.png" id="4_2w3p6"]
+[ext_resource type="FontFile" uid="uid://cr0nvsgkyuubt" path="res://objetos/04B_30__.TTF" id="4_5mnu1"]
+[ext_resource type="Texture2D" uid="uid://4bnt17wiqwph" path="res://objetos/trofeo.png" id="7_44pff"]
+[ext_resource type="Texture2D" uid="uid://c3gem8j3jtogo" path="res://objetos/mochilaaaayanomecabienestamonda.png" id="9_54ss4"]
+[ext_resource type="Script" path="res://butoncito.gd" id="10_bpqnp"]
+[ext_resource type="AudioStream" uid="uid://cdlvomxoncn4m" path="res://musica/MUY BIEN A E I O U  (2).mp3" id="11_r18qv"]
+[ext_resource type="Texture2D" uid="uid://721c3f2o1wrf" path="res://objetos/amacetgaa.png" id="12_v8qax"]
+[ext_resource type="Texture2D" uid="uid://7nkq5fp6kokj" path="res://objetos/E falsa.png" id="13_fdm7p"]
+[ext_resource type="Texture2D" uid="uid://bwwkrfvbe8ai1" path="res://objetos/I de piedraaaaa.png" id="14_ady38"]
+[ext_resource type="Texture2D" uid="uid://df26hqi3qkmmx" path="res://objetos/Letra O definitiva.png" id="15_rcwpr"]
+[ext_resource type="Texture2D" uid="uid://oatrgflbuc5d" path="res://objetos/u fondo.png" id="16_vsh6l"]
+[ext_resource type="Texture2D" uid="uid://xgia3a20vnft" path="res://objetos/clickmanitoowo.png" id="17_eic1d"]
+[ext_resource type="Texture2D" uid="uid://bkgux572mvwgd" path="res://objetos/mano animada uwu.png" id="18_e68wd"]
+[ext_resource type="AudioStream" uid="uid://ckehea8b7mgi8" path="res://musica2/brass-fanfare-with-timpani-and-winchimes-reverberated-146260.mp3" id="20_fv8kq"]
+[ext_resource type="AudioStream" uid="uid://di72iyivey1cq" path="res://musica2/Viento.mp3" id="20_oxxx2"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_d434j"]
+load_path = "res://.godot/imported/fondoatardecer.png-8999186d327b4cb7a3be5f18590a69e0.ctex"
+
+[sub_resource type="LabelSettings" id="LabelSettings_cwglg"]
+font = ExtResource("4_5mnu1")
+font_size = 41
+font_color = Color(0, 0, 0, 1)
+outline_size = 11
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ap0pt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_2w3p6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_54ss4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_772m0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dqhjk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_eic1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_e68wd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_r6mcm")
+
+[node name="Fondovictory121" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(574.5, 328)
+scale = Vector2(1.155, 0.652)
+texture = SubResource("CompressedTexture2D_d434j")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(589, 348)
+scale = Vector2(0.72, 0.502)
+texture = ExtResource("2_wml28")
+
+[node name="Label" type="Label" parent="Sprite2D"]
+texture_filter = 1
+offset_left = -194.444
+offset_top = -258.964
+offset_right = 296.556
+offset_bottom = -174.964
+scale = Vector2(1.02596, 1.60043)
+text = "Felicitaciones"
+label_settings = SubResource("LabelSettings_cwglg")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 509.0
+offset_top = 369.0
+offset_right = 693.0
+offset_bottom = 513.0
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Button2"]
+position = Vector2(82, 61)
+scale = Vector2(0.512, 0.32)
+sprite_frames = SubResource("SpriteFrames_ap0pt")
+frame_progress = 0.832532
+
+[node name="Button11" type="Button" parent="."]
+texture_filter = 1
+offset_left = 450.0
+offset_top = 343.0
+offset_right = 1309.0
+offset_bottom = 908.0
+scale = Vector2(0.30502, 0.302766)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_772m0")
+flat = true
+script = ExtResource("10_bpqnp")
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Button11"]
+position = Vector2(472.1, 287.351)
+scale = Vector2(1.75071, 1.04371)
+sprite_frames = SubResource("SpriteFrames_ap0pt")
+frame_progress = 0.832532
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_r18qv")
+volume_db = 12.0
+
+[node name="Trofeo" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(582, 320)
+scale = Vector2(2.85, 2.26)
+texture = ExtResource("7_44pff")
+
+[node name="Amacetgaa" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(389, 413)
+texture = ExtResource("12_v8qax")
+
+[node name="EFalsa" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(428, 352)
+scale = Vector2(2.5, 2.8)
+texture = ExtResource("13_fdm7p")
+
+[node name="IDePiedraaaaa" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(490.5, 306.5)
+scale = Vector2(0.825, 0.825)
+texture = ExtResource("14_ady38")
+
+[node name="LetraODefinitiva" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(683, 308)
+scale = Vector2(3.2, 3.2)
+texture = ExtResource("15_rcwpr")
+
+[node name="UFondo" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(739, 401)
+scale = Vector2(3.6, 3)
+texture = ExtResource("16_vsh6l")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(646, 454)
+sprite_frames = SubResource("SpriteFrames_dqhjk")
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("20_fv8kq")
+
+[node name="Ambientacion" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("20_oxxx2")
+volume_db = 5.0
+autoplay = true
+
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button11" to="Button11" method="_on_pressed"]

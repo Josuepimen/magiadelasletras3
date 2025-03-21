@@ -1,0 +1,64 @@
+[gd_scene load_steps=11 format=3 uid="uid://b2a3vsvil341k"]
+
+[ext_resource type="Script" path="res://drop22.gd" id="1_k0gxj"]
+[ext_resource type="Texture2D" uid="uid://uk8ftr6f5pbn" path="res://objetos/prueba1.png" id="2_ddu1r"]
+[ext_resource type="Texture2D" uid="uid://bx142g4hmflya" path="res://objetos/pruebaa1.png" id="3_darqw"]
+[ext_resource type="Texture2D" uid="uid://mve83aibelur" path="res://objetos/pruebaa2.png" id="4_4p6vr"]
+[ext_resource type="Texture2D" uid="uid://5d6dau0vyilg" path="res://objetos/yey.png" id="5_dl0ja"]
+[ext_resource type="Texture2D" uid="uid://tofq4fb7ng3c" path="res://objetos/yey2.png" id="6_dph7u"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_dpk7w"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_s7toc"]
+specular_color = Color(0.952941, 0.427451, 0.490196, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ci4lc"]
+size = Vector2(33, 26)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j536n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ddu1r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_darqw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4p6vr")
+}],
+"loop": true,
+"name": &"normal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_dl0ja")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_dph7u")
+}],
+"loop": true,
+"name": &"parado",
+"speed": 5.0
+}]
+
+[node name="drop_spot" type="Area2D" groups=["drop_spot_group"]]
+position = Vector2(525, 212)
+script = ExtResource("1_k0gxj")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+visible = false
+position = Vector2(1.91331e-05, 7.62939e-06)
+scale = Vector2(-33.5239, 25.3478)
+mesh = SubResource("QuadMesh_dpk7w")
+texture = SubResource("CanvasTexture_s7toc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ci4lc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-5.96046e-06, -6.73532e-06)
+scale = Vector2(0.862499, 0.66875)
+sprite_frames = SubResource("SpriteFrames_j536n")
+animation = &"parado"

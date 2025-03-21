@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c8h4kotklyt78"
+path="res://.godot/imported/O OSO.mp3-37379abe496eb67b7c9abddb8b5543ca.mp3str"
+
+[deps]
+
+source_file="res://musica2/O OSO.mp3"
+dest_files=["res://.godot/imported/O OSO.mp3-37379abe496eb67b7c9abddb8b5543ca.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

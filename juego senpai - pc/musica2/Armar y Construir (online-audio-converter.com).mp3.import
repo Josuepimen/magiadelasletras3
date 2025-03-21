@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d1x5n7mxhs4dw"
+path="res://.godot/imported/Armar y Construir (online-audio-converter.com).mp3-9885d17c6e13ce9784466f9c05564bf2.mp3str"
+
+[deps]
+
+source_file="res://musica2/Armar y Construir (online-audio-converter.com).mp3"
+dest_files=["res://.godot/imported/Armar y Construir (online-audio-converter.com).mp3-9885d17c6e13ce9784466f9c05564bf2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

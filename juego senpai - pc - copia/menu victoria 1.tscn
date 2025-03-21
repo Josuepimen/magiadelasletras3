@@ -1,0 +1,264 @@
+[gd_scene load_steps=23 format=3 uid="uid://b8mu18umcoibd"]
+
+[ext_resource type="FontFile" uid="uid://psj8vsfyanun" path="res://objetos/Cute Dino.ttf" id="1_1vsj6"]
+[ext_resource type="Script" path="res://menu victoria 1.gd" id="1_d7e3o"]
+[ext_resource type="Texture2D" uid="uid://b11g3b5v5m5d2" path="res://fondos/fondocielo2.png" id="3_4y5ds"]
+[ext_resource type="Texture2D" uid="uid://bm8d1y68hlpcp" path="res://objetos/marco.png" id="4_u2lmx"]
+[ext_resource type="Texture2D" uid="uid://cbuvomll6dlh3" path="res://objetos/Mochilaa.png" id="9_m2jmu"]
+[ext_resource type="Texture2D" uid="uid://c3gem8j3jtogo" path="res://objetos/mochilaaaayanomecabienestamonda.png" id="10_6hlrp"]
+[ext_resource type="Texture2D" uid="uid://b1skm5p8a5pt5" path="res://objetos/avion (2).png" id="11_avrkk"]
+[ext_resource type="AudioStream" uid="uid://cfgct16ospr6i" path="res://musica2/A DADO FELICITACIONES.mp3" id="11_j5a60"]
+[ext_resource type="Texture2D" uid="uid://bmd5pp067yehl" path="res://objetos/abejaa.png" id="12_2rvm7"]
+[ext_resource type="Texture2D" uid="uid://bj36fxt025h0c" path="res://objetos/arañita.png" id="14_5hi08"]
+[ext_resource type="Texture2D" uid="uid://xgia3a20vnft" path="res://objetos/clickmanitoowo.png" id="16_v15r4"]
+[ext_resource type="Texture2D" uid="uid://bkgux572mvwgd" path="res://objetos/mano animada uwu.png" id="17_mtopc"]
+[ext_resource type="AudioStream" uid="uid://ckehea8b7mgi8" path="res://musica2/brass-fanfare-with-timpani-and-winchimes-reverberated-146260.mp3" id="18_tqr5l"]
+[ext_resource type="Texture2D" uid="uid://tecl4wnm5n0j" path="res://objetos/dado.png" id="18_tvc7u"]
+[ext_resource type="AudioStream" uid="uid://di72iyivey1cq" path="res://musica2/Viento.mp3" id="19_8fdrh"]
+
+[sub_resource type="Theme" id="Theme_2hetf"]
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/colors/font_outline_color = Color(1, 1, 1, 1)
+Label/constants/outline_size = 13
+Label/font_sizes/font_size = 40
+Label/fonts/font = ExtResource("1_1vsj6")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qi4ke"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2b02m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_m2jmu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_6hlrp")
+}],
+"loop": true,
+"name": &"animacion",
+"speed": 2.0
+}]
+
+[sub_resource type="Animation" id="Animation_4efdh"]
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_7w8pg"]
+resource_name = "descanso"
+length = 2.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1.1, 1.1), Vector2(1.14, 1.15)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ocbuu"]
+_data = {
+"RESET": SubResource("Animation_4efdh"),
+"descanso": SubResource("Animation_7w8pg")
+}
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_acwwo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_v15r4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_mtopc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Control" type="Control"]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.998351, 1.00661)
+theme = SubResource("Theme_2hetf")
+script = ExtResource("1_d7e3o")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(572, 323.5)
+scale = Vector2(1.162, 0.649)
+texture = ExtResource("3_4y5ds")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.137
+anchor_top = 0.14
+anchor_right = 0.892
+anchor_bottom = 0.88
+offset_left = 11.4552
+offset_top = 2.66296
+offset_right = -53.3048
+offset_bottom = -42.8571
+scale = Vector2(1.1, 1.1)
+pivot_offset = Vector2(384.201, 252.586)
+texture = ExtResource("4_u2lmx")
+
+[node name="ColorRect" type="ColorRect" parent="TextureRect"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 38.0
+offset_top = 38.0
+offset_right = 770.0
+offset_bottom = 403.0
+pivot_offset = Vector2(387.7, 195.601)
+
+[node name="Label2" type="Label" parent="TextureRect"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 323.109
+offset_top = 148.417
+offset_right = 554.109
+offset_bottom = 241.417
+text = " Vocal
+  \"A a\""
+
+[node name="Label3" type="Label" parent="TextureRect"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 137.655
+offset_top = 351.144
+offset_right = 265.655
+offset_bottom = 405.144
+text = "\"Dado\""
+
+[node name="Label4" type="Label" parent="TextureRect"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 513.109
+offset_top = 354.781
+offset_right = 641.109
+offset_bottom = 408.781
+text = "\"Dado\""
+
+[node name="Label" type="Label" parent="TextureRect"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 248.564
+offset_top = 89.326
+offset_right = 681.564
+offset_bottom = 134.326
+text = "Felicitaciones"
+
+[node name="button" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+offset_left = 484.0
+offset_top = 320.0
+offset_right = 1051.0
+offset_bottom = 918.0
+scale = Vector2(0.30502, 0.302766)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qi4ke")
+flat = true
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="button"]
+texture_filter = 1
+position = Vector2(268.835, 345.151)
+scale = Vector2(1.95397, 1.44666)
+sprite_frames = SubResource("SpriteFrames_2b02m")
+animation = &"animacion"
+frame_progress = 0.139294
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 6.0
+one_shot = true
+autostart = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_j5a60")
+volume_db = 12.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ocbuu")
+}
+
+[node name="Avion(2)" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(916, 29)
+scale = Vector2(0.461667, 0.5)
+texture = ExtResource("11_avrkk")
+
+[node name="Abejaa" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(234, 150)
+scale = Vector2(0.17125, 0.184375)
+texture = ExtResource("12_2rvm7")
+flip_h = true
+
+[node name="Abejaa2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(935, 150)
+scale = Vector2(0.17125, 0.184375)
+texture = ExtResource("12_2rvm7")
+
+[node name="Arañaa" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(209, 482)
+scale = Vector2(0.21246, 0.21246)
+texture = ExtResource("14_5hi08")
+
+[node name="Arañaa2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(941, 478)
+scale = Vector2(0.21246, 0.21246)
+texture = ExtResource("14_5hi08")
+flip_h = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(616, 461)
+sprite_frames = SubResource("SpriteFrames_acwwo")
+frame_progress = 0.447578
+
+[node name="Dado" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(297, 301)
+texture = ExtResource("18_tvc7u")
+
+[node name="Dado2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(740, 398)
+texture = ExtResource("18_tvc7u")
+
+[node name="Dado3" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(826, 297)
+texture = ExtResource("18_tvc7u")
+
+[node name="Dado4" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(366, 397)
+texture = ExtResource("18_tvc7u")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+texture_filter = 1
+stream = ExtResource("18_tqr5l")
+volume_db = 4.0
+
+[node name="Ambientacion" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("19_8fdrh")
+autoplay = true
+
+[connection signal="pressed" from="button" to="." method="_on_button_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

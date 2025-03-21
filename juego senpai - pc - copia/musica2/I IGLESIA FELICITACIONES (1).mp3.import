@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://q8tgxb0kcopb"
+path="res://.godot/imported/I IGLESIA FELICITACIONES (1).mp3-88ebbfa05ccdde23dda31f846096291a.mp3str"
+
+[deps]
+
+source_file="res://musica2/I IGLESIA FELICITACIONES (1).mp3"
+dest_files=["res://.godot/imported/I IGLESIA FELICITACIONES (1).mp3-88ebbfa05ccdde23dda31f846096291a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

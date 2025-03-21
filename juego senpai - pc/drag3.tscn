@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://djnw15a5mac8u"]
+
+[ext_resource type="Texture2D" path="res://objetos/I verdadera.png" id="1_fpajs"]
+[ext_resource type="Script" path="res://drag3.gd" id="2_mc7cs"]
+[ext_resource type="AudioStream" uid="uid://bqtmoik08p17b" path="res://musica2/sonido presionar2.mp3" id="3_0vw0x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n8neg"]
+size = Vector2(8.36502, 10.9775)
+
+[node name="Sprite2D" type="Sprite2D"]
+texture_filter = 1
+position = Vector2(568.7, 347.75)
+scale = Vector2(1.315, 1.6625)
+texture = ExtResource("1_fpajs")
+script = ExtResource("2_mc7cs")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(-1.76994, -2.90909)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0.857361, 2.90907)
+shape = SubResource("RectangleShape2D_n8neg")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_0vw0x")
+volume_db = 6.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

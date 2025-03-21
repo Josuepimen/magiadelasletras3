@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://6ds4pqd47ehh"
+path="res://.godot/imported/PRESIONA EL BOTÓN .mp3-75ac5a6340dbc6c7388b4ba2537048b7.mp3str"
+
+[deps]
+
+source_file="res://musica2/PRESIONA EL BOTÓN .mp3"
+dest_files=["res://.godot/imported/PRESIONA EL BOTÓN .mp3-75ac5a6340dbc6c7388b4ba2537048b7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

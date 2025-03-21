@@ -1,0 +1,252 @@
+[gd_scene load_steps=21 format=3 uid="uid://ib826wqvb4pj"]
+
+[ext_resource type="FontFile" uid="uid://bjbcipml41b07" path="res://objetos/04B_30__.TTF" id="1_84ns7"]
+[ext_resource type="Script" path="res://emergente.gd" id="1_ho3qu"]
+[ext_resource type="PackedScene" uid="uid://4f1oit1gqylm" path="res://tutorial.tscn" id="2_6wxh1"]
+[ext_resource type="Texture2D" uid="uid://b1j1o3iif3dgq" path="res://fondos/123.png" id="2_ng4mv"]
+[ext_resource type="Texture2D" uid="uid://beechpiyi2whg" path="res://objetos/buttonplay1.png" id="4_pqk1h"]
+[ext_resource type="Texture2D" uid="uid://p8w5mvet6kpm" path="res://objetos/botonpreguntar.png" id="5_s8i85"]
+[ext_resource type="Texture2D" uid="uid://cd76mm8fyltc" path="res://objetos/buttonplay2.png" id="5_ubey7"]
+[ext_resource type="Texture2D" uid="uid://cbaon7a8pw3rg" path="res://objetos/BotonCreditos.png" id="6_m2aqd"]
+[ext_resource type="Texture2D" uid="uid://v3kfnfy4r8h6" path="res://objetos/botonpreguntarr.png" id="6_qk1tr"]
+[ext_resource type="Texture2D" uid="uid://cnnrsjnd1l5ko" path="res://objetos/BotonCreditosss.png" id="7_00t6t"]
+[ext_resource type="AudioStream" uid="uid://c6ecrr48gdoj6" path="res://musica2/TUTORIA2L.mp3" id="11_wcpst"]
+[ext_resource type="AudioStream" uid="uid://bp5tbn4b3y66j" path="res://musica2/TUTORIAL1.mp3" id="12_5ms7p"]
+[ext_resource type="Texture2D" uid="uid://ca20q8dxkw0of" path="res://objetos/flechaa.png" id="13_tjja7"]
+[ext_resource type="Texture2D" uid="uid://du4hwoitclncw" path="res://objetos/flechaa (2).png" id="14_banm8"]
+
+[sub_resource type="Theme" id="Theme_j14nx"]
+Label/font_sizes/font_size = 23
+Label/fonts/font = ExtResource("1_84ns7")
+
+[sub_resource type="LabelSettings" id="LabelSettings_8ttbj"]
+font_size = 59
+font_color = Color(0, 1, 1, 1)
+outline_size = 11
+outline_color = Color(0.2, 0, 0.913725, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_48muc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_pqk1h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ubey7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dlccd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_m2aqd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_00t6t")
+}],
+"loop": true,
+"name": &"credito",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i22hj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_s8i85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qk1tr")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l8k0x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_tjja7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_banm8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_j14nx")
+script = ExtResource("1_ho3qu")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1154.0
+offset_bottom = 644.0
+texture = ExtResource("2_ng4mv")
+
+[node name="Label" type="Label" parent="TextureRect"]
+layout_mode = 2
+offset_left = 338.0
+offset_top = 159.0
+offset_right = 377.0
+offset_bottom = 201.0
+text = "a"
+label_settings = SubResource("LabelSettings_8ttbj")
+
+[node name="Label2" type="Label" parent="TextureRect"]
+layout_mode = 2
+offset_left = 414.0
+offset_top = 90.0
+offset_right = 457.0
+offset_bottom = 137.0
+text = "e"
+label_settings = SubResource("LabelSettings_8ttbj")
+
+[node name="Label3" type="Label" parent="TextureRect"]
+layout_mode = 2
+offset_left = 554.0
+offset_top = 52.0
+offset_right = 597.0
+offset_bottom = 99.0
+text = "i"
+label_settings = SubResource("LabelSettings_8ttbj")
+
+[node name="Label4" type="Label" parent="TextureRect"]
+layout_mode = 2
+offset_left = 685.0
+offset_top = 75.0
+offset_right = 728.0
+offset_bottom = 122.0
+text = "o"
+label_settings = SubResource("LabelSettings_8ttbj")
+
+[node name="Label5" type="Label" parent="TextureRect"]
+layout_mode = 2
+offset_left = 771.0
+offset_top = 164.0
+offset_right = 814.0
+offset_bottom = 211.0
+text = "u"
+label_settings = SubResource("LabelSettings_8ttbj")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 1147.0
+offset_bottom = 641.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 60
+
+[node name="separator" type="Control" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+texture_filter = 1
+layout_mode = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+size_flags_stretch_ratio = 0.0
+theme_override_constants/separation = 33
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="tuto" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "         
+
+ 
+"
+flat = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/tuto"]
+texture_filter = 1
+position = Vector2(76, 12)
+scale = Vector2(2.56, 2.18)
+sprite_frames = SubResource("SpriteFrames_48muc")
+
+[node name="separator8" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="separator13" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="separator14" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="tutorial" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+z_as_relative = false
+layout_mode = 2
+size_flags_horizontal = 8
+text = "    bhvbn
+       
+
+"
+flat = true
+
+[node name="separator9" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="separator10" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="separator12" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="separator11" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="creditos" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "adkgfd}k}l}}l}l"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="MarginContainer/HBoxContainer/VBoxContainer/creditos"]
+position = Vector2(62.25, 25.75)
+scale = Vector2(2.195, 1.775)
+sprite_frames = SubResource("SpriteFrames_dlccd")
+animation = &"credito"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(595, 387)
+scale = Vector2(2.43, 2.02)
+sprite_frames = SubResource("SpriteFrames_i22hj")
+frame_progress = 0.407215
+
+[node name="tutorial" parent="." instance=ExtResource("2_6wxh1")]
+visible = false
+layout_mode = 1
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(415, 286)
+stream = ExtResource("11_wcpst")
+volume_db = 3.0
+attenuation = 0.00497876
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_5ms7p")
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(685, 328)
+rotation = -0.639986
+scale = Vector2(0.419527, 0.479063)
+sprite_frames = SubResource("SpriteFrames_l8k0x")
+
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/creditos" to="." method="_on_creditos_pressed"]

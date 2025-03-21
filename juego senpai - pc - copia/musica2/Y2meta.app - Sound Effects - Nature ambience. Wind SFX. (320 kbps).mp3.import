@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://m5acisbmjnpr"
+path="res://.godot/imported/Y2meta.app - Sound Effects - Nature ambience. Wind SFX. (320 kbps).mp3-3e6c0ecbde40dc206aa75fef38e88005.mp3str"
+
+[deps]
+
+source_file="res://musica2/Y2meta.app - Sound Effects - Nature ambience. Wind SFX. (320 kbps).mp3"
+dest_files=["res://.godot/imported/Y2meta.app - Sound Effects - Nature ambience. Wind SFX. (320 kbps).mp3-3e6c0ecbde40dc206aa75fef38e88005.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

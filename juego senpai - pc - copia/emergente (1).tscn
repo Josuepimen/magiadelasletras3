@@ -1,0 +1,68 @@
+[gd_scene load_steps=5 format=3 uid="uid://b8n1jjkpn28b0"]
+
+[ext_resource type="Script" path="res://emergente.gd" id="1_ho3qu"]
+[ext_resource type="PackedScene" uid="uid://4f1oit1gqylm" path="res://tutorial.tscn" id="2_6wxh1"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_xqcpi"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_uhtxo"]
+font_color = Color(0.839216, 0.254902, 0, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1147.0
+offset_bottom = 649.0
+script = ExtResource("1_ho3qu")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1148.0
+offset_bottom = 646.0
+texture = SubResource("CanvasTexture_xqcpi")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 60
+
+[node name="separator" type="Control" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Tutorial"
+label_settings = SubResource("LabelSettings_uhtxo")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 18
+alignment = 1
+
+[node name="separator2" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="tuto" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "pasar escena"
+
+[node name="tutorial" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Tutorial"
+
+[node name="tutorial" parent="." instance=ExtResource("2_6wxh1")]
+visible = false
+layout_mode = 1

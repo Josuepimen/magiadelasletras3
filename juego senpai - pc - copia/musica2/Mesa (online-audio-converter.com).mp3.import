@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dj28qr3qdtd0i"
+path="res://.godot/imported/Mesa (online-audio-converter.com).mp3-3bc58ab0b6361a44ad0b7032c7e1a51c.mp3str"
+
+[deps]
+
+source_file="res://musica2/Mesa (online-audio-converter.com).mp3"
+dest_files=["res://.godot/imported/Mesa (online-audio-converter.com).mp3-3bc58ab0b6361a44ad0b7032c7e1a51c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

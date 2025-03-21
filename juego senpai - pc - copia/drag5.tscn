@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://dj4pm3h2qp3i6"]
+
+[ext_resource type="Texture2D" uid="uid://oatrgflbuc5d" path="res://objetos/u fondo.png" id="1_qiuc8"]
+[ext_resource type="Script" path="res://asd.gd" id="2_tjo5f"]
+[ext_resource type="AudioStream" uid="uid://bqtmoik08p17b" path="res://musica2/sonido presionar2.mp3" id="3_xy5jg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n8neg"]
+size = Vector2(8.36502, 10.9775)
+
+[node name="Sprite2D" type="Sprite2D"]
+texture_filter = 1
+position = Vector2(45.0001, 38.0001)
+scale = Vector2(1.315, 1.6625)
+texture = ExtResource("1_qiuc8")
+script = ExtResource("2_tjo5f")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(-1.76994, -2.90909)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1.61783, 2.98428)
+shape = SubResource("RectangleShape2D_n8neg")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_xy5jg")
+volume_db = 12.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

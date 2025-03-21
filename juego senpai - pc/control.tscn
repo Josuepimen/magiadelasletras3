@@ -1,0 +1,79 @@
+[gd_scene load_steps=10 format=3 uid="uid://bhm64jnha7svw"]
+
+[ext_resource type="Script" path="res://Control.gd" id="1_0toe3"]
+[ext_resource type="Texture2D" uid="uid://dmoxfx0d3ywvt" path="res://fondos/fondo_victoria3.jpg" id="2_bc0q1"]
+[ext_resource type="Texture2D" uid="uid://d38kdpnem7l4g" path="res://fondos/Escena correcto.png" id="3_d4ysh"]
+[ext_resource type="Texture2D" uid="uid://b58b768k2ufym" path="res://objetos/pixil-frame-0 (8) (1).png" id="4_0jers"]
+[ext_resource type="FontFile" uid="uid://d36knmvcmtvo" path="res://fondos/nokiafc22.ttf" id="5_mu446"]
+[ext_resource type="Script" path="res://Node2D.gd" id="6_o71a5"]
+[ext_resource type="Texture2D" uid="uid://d8arjr76web4" path="res://objetos/Estrella_recompensa.png" id="7_f337b"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yho82"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_0xdcg"]
+font = ExtResource("5_mu446")
+font_size = 31
+font_color = Color(0, 0, 1, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0toe3")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(580, 325.5)
+scale = Vector2(1.12109, 0.631836)
+texture = ExtResource("2_bc0q1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(567, 314.5)
+scale = Vector2(0.896, 0.647)
+texture = ExtResource("3_d4ysh")
+
+[node name="Button" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+offset_left = 475.0
+offset_top = 322.0
+offset_right = 1105.0
+offset_bottom = 830.0
+scale = Vector2(0.30502, 0.302766)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yho82")
+icon = ExtResource("4_0jers")
+flat = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 424.0
+offset_top = 168.0
+offset_right = 712.0
+offset_bottom = 207.0
+text = "¡Felicitaciones!"
+label_settings = SubResource("LabelSettings_0xdcg")
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("6_o71a5")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Node2D"]
+texture_filter = 1
+position = Vector2(1027, 65)
+scale = Vector2(1.27, 1.2)
+texture = ExtResource("7_f337b")
+
+[node name="aparecer5" type="Timer" parent="Node2D"]
+wait_time = 2.169
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 6.927
+autostart = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="timeout" from="Node2D/aparecer5" to="Node2D" method="_on_aparecer_5_timeout"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

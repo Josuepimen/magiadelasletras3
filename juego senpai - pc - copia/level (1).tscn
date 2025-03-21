@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://xyfjwosi5omd"]
+
+[ext_resource type="Texture2D" uid="uid://bq57ljl5vq1k0" path="res://fondos/descarga (1).jpg" id="1_6l1lw"]
+[ext_resource type="PackedScene" uid="uid://f1yk8srv2chc" path="res://draggable.tscn" id="2_i6juj"]
+[ext_resource type="PackedScene" uid="uid://dtfyaf6jbs5c4" path="res://drop.tscn" id="2_k3uyb"]
+
+[node name="level" type="Node2D"]
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(578, 322)
+scale = Vector2(5.10222, 2.86222)
+texture = ExtResource("1_6l1lw")
+
+[node name="Area2D" parent="." instance=ExtResource("2_k3uyb")]
+position = Vector2(170, 209)
+
+[node name="Area2D2" parent="." instance=ExtResource("2_k3uyb")]
+position = Vector2(829, 232)
+
+[node name="Sprite2D" parent="." instance=ExtResource("2_i6juj")]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://vk50mq6ibg62"
+path="res://.godot/imported/PIEDRA I.mp3-bc3293d0640db1bac77e3b6775f277e7.mp3str"
+
+[deps]
+
+source_file="res://musica2/PIEDRA I.mp3"
+dest_files=["res://.godot/imported/PIEDRA I.mp3-bc3293d0640db1bac77e3b6775f277e7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

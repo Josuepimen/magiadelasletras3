@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bfv56c88368u3"
+path="res://.godot/imported/MU V2 (online-audio-converter.com) (1).mp3-588f112e26575c72f4bd6675aa13e831.mp3str"
+
+[deps]
+
+source_file="res://musica2/MU V2 (online-audio-converter.com) (1).mp3"
+dest_files=["res://.godot/imported/MU V2 (online-audio-converter.com) (1).mp3-588f112e26575c72f4bd6675aa13e831.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
